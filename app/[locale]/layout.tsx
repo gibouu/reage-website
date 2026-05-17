@@ -35,6 +35,9 @@ const notoTifinagh = Noto_Sans_Tifinagh({
   variable: "--font-tifinagh",
 });
 
+// Static export: only the known locales are generated; anything else 404s.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
