@@ -25,6 +25,10 @@ import {
 } from "@/lib/supabase/queries";
 import type { Event, Article } from "@/lib/supabase/types";
 
+// Reads live events/articles from Supabase per request — must not be
+// statically prerendered at build time.
+export const dynamic = "force-dynamic";
+
 export default async function HomePage(props: {
   params: Promise<{ locale: string }>;
 }) {
