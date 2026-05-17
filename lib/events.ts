@@ -1,32 +1,13 @@
-export type EventType = "afterwork" | "picnic" | "ramadan";
+// Display helpers for DB-backed events. Content lives in Supabase
+// (public.events); these only format/derive presentation bits.
 
-export interface SiteEvent {
-  id: string;
-  type: EventType;
-  /** ISO date (YYYY-MM-DD). */
-  date: string;
-  /** Optional place; shown as-is (proper noun, not translated). */
-  location?: string;
-}
+export type EventKind = "afterwork" | "picnic" | "ramadan" | "default";
 
-// Concrete-dated events. After-works fall on a late-month Tuesday; the Ramadan
-// dinner date is an approximation until confirmed each year.
-export const events: SiteEvent[] = [
-  {
-    id: "aw-2026-04-29",
-    type: "afterwork",
-    date: "2026-04-29",
-    location: "Grande Mosquée de Paris",
-  },
-  { id: "picnic-2026-07-12", type: "picnic", date: "2026-07-12", location: "Paris" },
-  { id: "aw-2026-09-29", type: "afterwork", date: "2026-09-29" },
-  { id: "ramadan-2027-02-13", type: "ramadan", date: "2027-02-13" },
-  { id: "aw-2027-01-26", type: "afterwork", date: "2027-01-26" },
-  { id: "aw-2027-04-27", type: "afterwork", date: "2027-04-27" },
-];
-
-export function sortedEvents(): SiteEvent[] {
-  return [...events].sort((a, b) => a.date.localeCompare(b.date));
+export function eventKind(slug: string): EventKind {
+  if (slug.startsWith("aw-") || slug.includes("afterwork")) return "afterwork";
+  if (slug.startsWith("picnic")) return "picnic";
+  if (slug.startsWith("ramadan") || slug.includes("iftar")) return "ramadan";
+  return "default";
 }
 
 export function isPast(date: string): boolean {

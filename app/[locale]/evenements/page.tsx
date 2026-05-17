@@ -1,37 +1,37 @@
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Moon, Users, Trees, MapPin, CalendarClock } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
-import { sortedEvents, isPast, formatEventDate, type EventType } from "@/lib/events";
+import { getPublishedEvents, pickT } from "@/lib/supabase/queries";
+import { eventKind, isPast, formatEventDate } from "@/lib/events";
 
-const ICON: Record<EventType, typeof Users> = {
+export const dynamic = "force-dynamic";
+
+const ICON = {
   afterwork: Users,
   picnic: Trees,
   ramadan: Moon,
-};
+  default: CalendarClock,
+} as const;
 
 export default async function Page(props: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await props.params;
   setRequestLocale(locale);
-  return <Content locale={locale} />;
-}
-
-function Content({ locale }: { locale: string }) {
-  const t = useTranslations("EventsPage");
-  const all = sortedEvents();
-  const upcoming = all.filter((e) => !isPast(e.date));
-  const past = all.filter((e) => isPast(e.date)).reverse();
+  const t = await getTranslations("EventsPage");
+  const events = await getPublishedEvents();
+  const upcoming = events.filter((e) => !isPast(e.date_start));
+  const past = events.filter((e) => isPast(e.date_start)).reverse();
 
   const Card = ({
     e,
     pastEvent,
   }: {
-    e: (typeof all)[number];
+    e: (typeof events)[number];
     pastEvent: boolean;
   }) => {
-    const Icon = ICON[e.type];
+    const Icon = ICON[eventKind(e.slug)];
+    const c = pickT(e.translations, locale);
     return (
       <article className="flex flex-col rounded-[var(--radius-card)] border border-line bg-paper p-7">
         <div className="flex items-center justify-between">
@@ -48,12 +48,10 @@ function Content({ locale }: { locale: string }) {
             {pastEvent ? t("past") : t("upcoming")}
           </span>
         </div>
-        <h3 className="mt-6 font-display text-xl text-ink">
-          {t(`${e.type}Title`)}
-        </h3>
+        <h3 className="mt-6 font-display text-xl text-ink">{c.title}</h3>
         <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-ochre">
           <CalendarClock className="size-4" aria-hidden />
-          {formatEventDate(e.date, locale)}
+          {formatEventDate(e.date_start, locale)}
         </p>
         {e.location && (
           <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-ink-faint">
@@ -61,9 +59,19 @@ function Content({ locale }: { locale: string }) {
             {e.location}
           </p>
         )}
-        <p className="mt-3 leading-relaxed text-ink-soft">
-          {t(`${e.type}Body`)}
-        </p>
+        {c.body && (
+          <p className="mt-3 leading-relaxed text-ink-soft">{c.body}</p>
+        )}
+        {e.helloasso_ticket_url && (
+          <a
+            href={e.helloasso_ticket_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex w-fit items-center gap-2 text-sm font-medium text-teal hover:text-ochre"
+          >
+            {t("register")}
+          </a>
+        )}
       </article>
     );
   };
@@ -74,14 +82,18 @@ function Content({ locale }: { locale: string }) {
         {t("intro")}
       </p>
 
-      <h2 className="mt-14 font-display text-2xl text-ink">
-        {t("upcomingTitle")}
-      </h2>
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {upcoming.map((e) => (
-          <Card key={e.id} e={e} pastEvent={false} />
-        ))}
-      </div>
+      {upcoming.length > 0 && (
+        <>
+          <h2 className="mt-14 font-display text-2xl text-ink">
+            {t("upcomingTitle")}
+          </h2>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {upcoming.map((e) => (
+              <Card key={e.id} e={e} pastEvent={false} />
+            ))}
+          </div>
+        </>
+      )}
 
       {past.length > 0 && (
         <>
@@ -96,7 +108,9 @@ function Content({ locale }: { locale: string }) {
         </>
       )}
 
-      <p className="mt-10 text-sm text-ink-faint">{t("dynamicNote")}</p>
+      {events.length === 0 && (
+        <p className="mt-10 text-ink-soft">{t("dynamicNote")}</p>
+      )}
     </PageShell>
   );
 }
