@@ -1,10 +1,9 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-// Static export with basePath: next/image (unoptimized) does not prefix the
-// basePath onto a public-folder src, so we use a plain <img> and prefix it
-// ourselves from NEXT_PUBLIC_BASE_PATH (inlined at build time).
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
+// REAGE wordmark. `default` is the colour logo on a transparent background
+// (blends with the warm "bone" surface); `light` is the all-white version
+// used on dark teal panels.
 export function Logo({
   variant = "default",
   className,
@@ -14,17 +13,13 @@ export function Logo({
   className?: string;
   priority?: boolean;
 }) {
-  const file = variant === "light" ? "/logo-white.png" : "/logo.png";
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img
-      src={`${BASE}${file}`}
+    <Image
+      src={variant === "light" ? "/logo-white.png" : "/logo.png"}
       alt="REAGE"
       width={354}
       height={166}
-      decoding="async"
-      loading={priority ? "eager" : "lazy"}
-      fetchPriority={priority ? "high" : "auto"}
+      priority={priority}
       className={cn("h-9 w-auto", className)}
     />
   );
