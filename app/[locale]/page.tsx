@@ -1,19 +1,28 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import {
   Users,
   Rocket,
   GraduationCap,
   ArrowRight,
-  CalendarDays,
   Newspaper,
   Heart,
   Star,
+  Trees,
+  Moon,
+  MapPin,
+  CalendarClock,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { ButtonLink } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import { partners, site } from "@/lib/site";
+import {
+  sortedEvents,
+  isPast,
+  formatEventDate,
+  type EventType,
+} from "@/lib/events";
 
 export default async function HomePage(props: {
   params: Promise<{ locale: string }>;
@@ -107,29 +116,29 @@ function Hero() {
           />
           <div className="relative">
             <Logo variant="light" className="h-8" />
-            <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-ochre">
+            <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-bone/80">
               {tM("title")}
             </p>
-            <div className="mt-4 space-y-4">
-              <div className="rounded-2xl border border-bone/15 bg-bone/5 p-5">
-                <div className="flex items-center gap-2 text-bone">
+            <div className="mt-4 space-y-3">
+              <div className="rounded-2xl bg-bone p-5 shadow-[0_10px_30px_-16px_rgba(0,0,0,0.55)]">
+                <div className="flex items-center gap-2">
                   <Users className="size-4 text-ochre" aria-hidden />
-                  <h2 className="font-display text-lg">
+                  <h2 className="font-display text-lg text-ink">
                     {tM("free.title")}
                   </h2>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-bone/75">
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                   {tM("free.body")}
                 </p>
               </div>
-              <div className="rounded-2xl border border-ochre/40 bg-bone/5 p-5">
-                <div className="flex items-center gap-2 text-bone">
+              <div className="rounded-2xl bg-bone p-5 shadow-[0_10px_30px_-16px_rgba(0,0,0,0.55)] ring-1 ring-ochre/50">
+                <div className="flex items-center gap-2">
                   <Star className="size-4 text-ochre" aria-hidden />
-                  <h2 className="font-display text-lg">
+                  <h2 className="font-display text-lg text-ink">
                     {tM("paid.title")}
                   </h2>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-bone/75">
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft">
                   {tM("paid.body")}
                 </p>
               </div>
@@ -209,21 +218,61 @@ function WhatWeDo() {
   );
 }
 
+const EVENT_ICON: Record<EventType, typeof Users> = {
+  afterwork: Users,
+  picnic: Trees,
+  ramadan: Moon,
+};
+
 function LatestEvents() {
   const t = useTranslations("Home.events");
-  // Events come from Supabase in Phase 3; until then show a graceful empty state.
-  const events: never[] = [];
+  const te = useTranslations("EventsPage");
+  const locale = useLocale();
+  const list = sortedEvents()
+    .filter((e) => !isPast(e.date))
+    .slice(0, 6);
+
   return (
-    <section className="container-page py-24">
-      <SectionHead
-        title={t("title")}
-        subtitle={t("subtitle")}
-        href="/evenements"
-        cta={t("all")}
-      />
-      {events.length === 0 && (
-        <EmptyState Icon={CalendarDays} label={t("empty")} />
-      )}
+    <section className="py-24">
+      <div className="container-page">
+        <SectionHead
+          title={t("title")}
+          subtitle={t("subtitle")}
+          href="/evenements"
+          cta={t("all")}
+        />
+        <div className="mt-10 -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4 [scrollbar-width:thin]">
+          {list.map((e) => {
+            const Icon = EVENT_ICON[e.type];
+            return (
+              <article
+                key={e.id}
+                className="flex w-72 shrink-0 snap-start flex-col rounded-[var(--radius-card)] border border-line bg-paper p-6"
+              >
+                <span className="grid size-11 place-items-center rounded-2xl bg-teal-tint text-teal">
+                  <Icon className="size-5" aria-hidden />
+                </span>
+                <h3 className="mt-5 font-display text-lg text-ink">
+                  {te(`${e.type}Title`)}
+                </h3>
+                <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-ochre">
+                  <CalendarClock className="size-4" aria-hidden />
+                  {formatEventDate(e.date, locale)}
+                </p>
+                {e.location && (
+                  <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-ink-faint">
+                    <MapPin className="size-3.5" aria-hidden />
+                    {e.location}
+                  </p>
+                )}
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                  {te(`${e.type}Body`)}
+                </p>
+              </article>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 }
@@ -353,7 +402,7 @@ function EmptyState({
   Icon,
   label,
 }: {
-  Icon: typeof CalendarDays;
+  Icon: typeof Newspaper;
   label: string;
 }) {
   return (

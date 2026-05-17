@@ -1,14 +1,12 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Rocket, TrendingUp, GraduationCap, Sprout, Landmark } from "lucide-react";
+import { Rocket, TrendingUp, Sprout, Landmark } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
-import { Link } from "@/i18n/navigation";
 import { groups } from "@/lib/site";
 
 const ICON = {
   entrepreneurship: Rocket,
   investing: TrendingUp,
-  training: GraduationCap,
   agriculture: Sprout,
   finance: Landmark,
 } as const;
@@ -31,7 +29,7 @@ function Content() {
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
         {groups.map((g) => {
           const Icon = ICON[g.key as keyof typeof ICON];
-          const href = "href" in g ? g.href : undefined;
+          const created = "created" in g ? g.created : undefined;
           return (
             <article
               key={g.slug}
@@ -48,18 +46,8 @@ function Content() {
                 {t(`${g.key}Body`)}
               </p>
               <p className="mt-4 text-sm text-ink-faint">
-                {"created" in g && g.created
-                  ? `${t("createdLabel")} ${g.created}`
-                  : t("soon")}
+                {created ? `${t("createdLabel")} ${created}` : t("soon")}
               </p>
-              {href && (
-                <Link
-                  href={href}
-                  className="mt-4 inline-flex w-fit items-center gap-2 text-sm font-medium text-teal transition-colors hover:text-ochre"
-                >
-                  {t("view")}
-                </Link>
-              )}
             </article>
           );
         })}

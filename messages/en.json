@@ -178,5 +178,21 @@
     "p8Body": "This site uses no tracking cookies or third-party analytics. Only strictly technical cookies, necessary for it to work, may be set.",
     "p9Title": "Updates",
     "p9Body": "This policy may be amended to reflect legal or site changes. For any question regarding your data, contact {email}."
+  },
+  "EventsPage": {
+    "kicker": "Network gatherings",
+    "title": "Events",
+    "intro": "The network's upcoming dates and past editions.",
+    "upcomingTitle": "Upcoming",
+    "pastTitle": "Past editions",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "afterworkTitle": "After-work",
+    "afterworkBody": "An informal gathering for members from every background. The last session brought together around a hundred people from all disciplines.",
+    "picnicTitle": "Annual picnic",
+    "picnicBody": "Members and families meet in Paris in a relaxed setting.",
+    "ramadanTitle": "Ramadan dinner",
+    "ramadanBody": "The annual Ramadan dinner brings the network together around a friendly iftar (approximate date, confirmed each year).",
+    "dynamicNote": "Registration will be published here ahead of each date."
   }
 }
