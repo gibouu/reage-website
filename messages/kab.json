@@ -1,0 +1,72 @@
+{
+  "Nav": {
+    "home": "Tazwart",
+    "about": "Tiddukla",
+    "training": "Asileɣ",
+    "events": "Tidyanin",
+    "news": "Isallen",
+    "membership": "Anekcum",
+    "contact": "Anermes",
+    "join": "Rnu-aɣ-d",
+    "menu": "Umuɣ",
+    "close": "Mdel"
+  },
+  "Lang": {
+    "label": "Tutlayt"
+  },
+  "Home": {
+    "hero": {
+      "kicker": "Azeḍḍa n yimezdaɣ izzayriyen n Tuṛuft",
+      "title": "Nesmuttul izerfan izzayriyen, da akked dihin.",
+      "subtitle": "REAGE tessemlili imḍebbren d yimsewwaqen izzayriyen n Tuṛuft akken ad bnun assaɣen iǧehden d Lezzayer, ad bḍun tamusni, ad sneflin azeḍḍa n laman.",
+      "ctaDonate": "Efk tawsa",
+      "ctaJoin": "Rnu-aɣ-d"
+    },
+    "about": {
+      "kicker": "Anwa-aɣ",
+      "title": "Taqenṭert gar yimezdaɣ d Lezzayer",
+      "link": "Issin tiddukla"
+    },
+    "what": {
+      "title": "Ayen i nxeddem",
+      "subtitle": "Krad iferdisen deg wul n umahil-nneɣ.",
+      "network": { "title": "Azeḍḍa" },
+      "entrepreneurship": { "title": "Tasenfart" },
+      "training": { "title": "Asileɣ" }
+    },
+    "events": {
+      "title": "Tidyanin i d-iteddun",
+      "all": "Akk tidyanin"
+    },
+    "news": {
+      "title": "Isallen",
+      "all": "Akk isallen"
+    },
+    "support": {
+      "kicker": "Sefrek REAGE",
+      "title": "Tallalt-ik tessenfaray azeḍḍa",
+      "ctaDonate": "Efk tawsa s HelloAsso",
+      "ctaMembership": "Uɣal d amaslaḍ",
+      "note": "Tawsa taɣellsant s HelloAsso"
+    },
+    "partners": {
+      "title": "Wid i ɣ-d-iddan"
+    }
+  },
+  "Footer": {
+    "navTitle": "Tunigin",
+    "contactTitle": "Anermes",
+    "followTitle": "Ḍfer-aɣ",
+    "linkedin": "LinkedIn",
+    "rights": "Akk izerfan ttwaḥerzen."
+  },
+  "Common": {
+    "readMore": "Ɣeṛ ugar",
+    "backHome": "Uɣal ɣer tzwart",
+    "comingSoon": "Ad d-yas s wakud"
+  },
+  "NotFound": {
+    "title": "Asebter ur yettwaf ara",
+    "body": "Asebter i tettnadiḍ ulac-it neɣ yettwasmutti."
+  }
+}

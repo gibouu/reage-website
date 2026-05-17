@@ -1,0 +1,93 @@
+{
+  "Meta": {
+    "title": "REAGE — Network of Algerian executives and entrepreneurs in Europe",
+    "description": "REAGE connects the Algerian diaspora in Europe with Algeria: a network of executives and entrepreneurs serving economy, entrepreneurship and training."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "training": "Training",
+    "events": "Events",
+    "news": "News",
+    "membership": "Membership",
+    "contact": "Contact",
+    "join": "Join us",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Lang": {
+    "label": "Language"
+  },
+  "Home": {
+    "hero": {
+      "kicker": "Network of the Algerian diaspora in Europe",
+      "title": "Connecting Algerian talent, here and there.",
+      "subtitle": "REAGE brings together Algerian executives and entrepreneurs in Europe to build lasting ties with Algeria, share knowledge and grow a network of trust.",
+      "ctaDonate": "Donate",
+      "ctaJoin": "Join us"
+    },
+    "about": {
+      "kicker": "Who we are",
+      "title": "A bridge between the diaspora and Algeria",
+      "body": "A non-profit association founded in 2006, REAGE brings together people committed to Algeria's economic development. We enable connections, the exchange of expertise and mentoring — with no partisan affiliation, in the sole service of skills and projects.",
+      "link": "Learn about the association"
+    },
+    "what": {
+      "title": "What we do",
+      "subtitle": "Three levers at the heart of our work.",
+      "network": {
+        "title": "Network",
+        "body": "Connecting diaspora professionals with one another and with economic players in Algeria."
+      },
+      "entrepreneurship": {
+        "title": "Entrepreneurship",
+        "body": "Supporting initiatives, innovation and projects that create value on both shores of the Mediterranean."
+      },
+      "training": {
+        "title": "Training",
+        "body": "Sharing knowledge through training and mentoring tailored to real needs."
+      }
+    },
+    "events": {
+      "title": "Upcoming events",
+      "subtitle": "Meetings, conferences and network gatherings.",
+      "empty": "No events scheduled at the moment. Check back soon.",
+      "all": "All events"
+    },
+    "news": {
+      "title": "News",
+      "subtitle": "The latest from the association and its members.",
+      "empty": "The first news is coming soon.",
+      "all": "All news"
+    },
+    "support": {
+      "kicker": "Support REAGE",
+      "title": "Your support moves the network forward",
+      "body": "Every donation helps REAGE host gatherings, mentor project leaders and strengthen ties between Europe and Algeria. Payments are securely handled by HelloAsso — no money passes through this site.",
+      "note": "Membership and support securely handled by HelloAsso."
+    },
+    "partners": {
+      "title": "They support us",
+      "subtitle": "Institutional and economic partners."
+    }
+  },
+  "Footer": {
+    "tagline": "Network of Algerian executives and entrepreneurs in Europe.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "linkedin": "LinkedIn",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
+  },
+  "Common": {
+    "readMore": "Read more",
+    "backHome": "Back to home",
+    "comingSoon": "Coming soon"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved."
+  }
+}

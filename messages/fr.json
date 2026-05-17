@@ -1,0 +1,126 @@
+{
+  "Meta": {
+    "title": "REAGE — Réseau des cadres et entrepreneurs algériens d'Europe",
+    "description": "REAGE relie la diaspora algérienne d'Europe à l'Algérie : un réseau de cadres et d'entrepreneurs au service de l'économie, de l'entrepreneuriat et de la formation."
+  },
+  "Nav": {
+    "home": "Accueil",
+    "about": "L'association",
+    "training": "Formation",
+    "events": "Événements",
+    "news": "Actualités",
+    "membership": "Adhésion",
+    "contact": "Contact",
+    "join": "Nous rejoindre",
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "Lang": {
+    "label": "Langue"
+  },
+  "Home": {
+    "hero": {
+      "kicker": "Réseau de la diaspora algérienne d'Europe",
+      "title": "Relier les talents algériens, ici et là-bas.",
+      "subtitle": "REAGE rassemble les cadres et entrepreneurs algériens d'Europe pour tisser des liens durables avec l'Algérie, partager les savoirs et faire grandir un réseau de confiance.",
+      "ctaDonate": "Faire un don",
+      "ctaJoin": "Nous rejoindre"
+    },
+    "about": {
+      "kicker": "Qui sommes-nous",
+      "title": "Un pont entre la diaspora et l'Algérie",
+      "body": "Association loi 1901 fondée en 2006, REAGE réunit des femmes et des hommes attachés au développement économique de l'Algérie. Nous facilitons les rencontres, l'échange d'expertise et l'accompagnement, sans appartenance partisane, au seul service des compétences et des projets.",
+      "link": "Découvrir l'association"
+    },
+    "what": {
+      "title": "Ce que nous faisons",
+      "subtitle": "Trois leviers au cœur de notre action.",
+      "network": {
+        "title": "Réseau",
+        "body": "Connecter les professionnels de la diaspora entre eux et avec les acteurs économiques en Algérie."
+      },
+      "entrepreneurship": {
+        "title": "Entrepreneuriat",
+        "body": "Soutenir les initiatives, l'innovation et les projets qui créent de la valeur des deux côtés de la Méditerranée."
+      },
+      "training": {
+        "title": "Formation",
+        "body": "Partager les savoirs par des formations et un mentorat adaptés aux besoins du terrain."
+      }
+    },
+    "events": {
+      "title": "Événements à venir",
+      "subtitle": "Rencontres, conférences et rendez-vous du réseau.",
+      "empty": "Aucun événement programmé pour le moment. Revenez bientôt.",
+      "all": "Tous les événements"
+    },
+    "news": {
+      "title": "Actualités",
+      "subtitle": "Les dernières nouvelles de l'association et de ses membres.",
+      "empty": "Les premières actualités arrivent bientôt.",
+      "all": "Toutes les actualités"
+    },
+    "support": {
+      "kicker": "Soutenir REAGE",
+      "title": "Votre soutien fait avancer le réseau",
+      "body": "Chaque don aide REAGE à organiser des rencontres, accompagner des porteurs de projets et renforcer les liens entre l'Europe et l'Algérie. Les paiements sont gérés en toute sécurité par HelloAsso — aucun montant ne transite par ce site.",
+      "note": "Adhésion et soutien gérés en toute sécurité par HelloAsso."
+    },
+    "partners": {
+      "title": "Ils nous accompagnent",
+      "subtitle": "Partenaires institutionnels et économiques."
+    }
+  },
+  "Footer": {
+    "tagline": "Réseau des cadres et entrepreneurs algériens d'Europe.",
+    "navTitle": "Navigation",
+    "contactTitle": "Contact",
+    "followTitle": "Suivez-nous",
+    "linkedin": "LinkedIn",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "Common": {
+    "readMore": "Lire la suite",
+    "backHome": "Retour à l'accueil",
+    "comingSoon": "Bientôt disponible"
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "body": "La page que vous cherchez n'existe pas ou a été déplacée."
+  },
+  "Presentation": {
+    "kicker": "L'association",
+    "title": "Qui sommes-nous",
+    "intro": "REAGE — Réseau des cadres et entrepreneurs algériens d'Europe — est une association loi 1901 qui relie la diaspora algérienne d'Europe à l'Algérie, autour de l'économie, de l'entrepreneuriat et de la formation.",
+    "missionTitle": "Notre mission",
+    "missionLead": "REAGE poursuit trois objectifs :",
+    "mission1": "Contribuer au développement socio-économique de l'Algérie.",
+    "mission2": "Promouvoir la communauté des cadres et entrepreneurs à l'international.",
+    "mission3": "Mobiliser les acteurs économiques au bénéfice de l'Algérie.",
+    "visionTitle": "Notre vision",
+    "visionBody": "Renforcer les liens économiques entre l'Algérie et l'Europe par des partenariats innovants et durables : échange d'expertise, investissements croisés et transfert de savoir-faire, de part et d'autre de la Méditerranée — sans appartenance partisane.",
+    "historyTitle": "Notre histoire",
+    "historyBody": "Née d'initiatives lancées au milieu des années 1990 par des professionnels algériens et franco-algériens, l'association a été officiellement créée le 1er février 2006, à la suite d'une décision prise lors d'une conférence économique le 14 juin 2005 à l'ESCP.",
+    "governanceTitle": "Gouvernance",
+    "governanceBody": "REAGE est une association régie par la loi française de 1901. Président : Fetah Ouazzani."
+  },
+  "Formation": {
+    "title": "Formation",
+    "intro": "Des formations souples et en ligne pour renforcer les compétences et encourager l'entrepreneuriat, autour de trois piliers : montée en compétences, soutien à l'entrepreneuriat et mentorat personnalisé.",
+    "programsTitle": "Nos programmes",
+    "p1Title": "Prise de parole en public",
+    "p1Body": "Gagner en efficacité et en aisance à l'oral, et révéler son potentiel en présentation.",
+    "p2Title": "Les métiers du conseil",
+    "p2Body": "De la stratégie à l'organisation : comprendre et accéder aux métiers du conseil.",
+    "p3Title": "Intelligence économique",
+    "p3Body": "La réponse nécessaire au nouvel environnement des entreprises.",
+    "note": "Programmes en ligne, durée flexible."
+  },
+  "Contact": {
+    "title": "Contact",
+    "body": "Une question, un projet, une envie de rejoindre le réseau ? Écrivez-nous, nous vous répondrons rapidement.",
+    "emailLabel": "Email"
+  }
+}
