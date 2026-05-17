@@ -119,26 +119,26 @@ function Hero() {
             <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-bone/80">
               {tM("title")}
             </p>
-            <div className="mt-4 space-y-3">
-              <div className="rounded-2xl bg-bone p-5 shadow-[0_10px_30px_-16px_rgba(0,0,0,0.55)]">
-                <div className="flex items-center gap-2">
-                  <Users className="size-4 text-ochre" aria-hidden />
-                  <h2 className="font-display text-lg text-ink">
+            <div className="mt-5 space-y-4">
+              <div className="rounded-2xl border border-white/25 bg-white/10 p-6 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)] ring-1 ring-inset ring-white/10 backdrop-blur-xl">
+                <div className="flex items-center gap-2.5">
+                  <Users className="size-5 text-ochre" aria-hidden />
+                  <h2 className="font-display text-xl font-semibold text-white">
                     {tM("free.title")}
                   </h2>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                <p className="mt-2.5 text-[0.95rem] font-medium leading-relaxed text-white/90">
                   {tM("free.body")}
                 </p>
               </div>
-              <div className="rounded-2xl bg-bone p-5 shadow-[0_10px_30px_-16px_rgba(0,0,0,0.55)] ring-1 ring-ochre/50">
-                <div className="flex items-center gap-2">
-                  <Star className="size-4 text-ochre" aria-hidden />
-                  <h2 className="font-display text-lg text-ink">
+              <div className="rounded-2xl border border-ochre/60 bg-ochre/15 p-6 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)] ring-1 ring-inset ring-white/10 backdrop-blur-xl">
+                <div className="flex items-center gap-2.5">
+                  <Star className="size-5 text-ochre" aria-hidden />
+                  <h2 className="font-display text-xl font-semibold text-white">
                     {tM("paid.title")}
                   </h2>
                 </div>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                <p className="mt-2.5 text-[0.95rem] font-medium leading-relaxed text-white/90">
                   {tM("paid.body")}
                 </p>
               </div>
