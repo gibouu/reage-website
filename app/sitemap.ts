@@ -1,7 +1,13 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const BASE = "https://reage.org";
+export const dynamic = "force-static";
+
+// Deployed origin (incl. project-pages subpath). Override with
+// NEXT_PUBLIC_SITE_URL once a custom domain (reage.org) is attached.
+const BASE =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://gibouu.github.io/reage-website";
 const paths = [
   "",
   "/presentation",
