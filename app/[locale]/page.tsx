@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import {
   Users,
@@ -17,25 +17,31 @@ import { Link } from "@/i18n/navigation";
 import { ButtonLink } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import { partners, site } from "@/lib/site";
+import { eventKind, isPast, formatEventDate, type EventKind } from "@/lib/events";
 import {
-  sortedEvents,
-  isPast,
-  formatEventDate,
-  type EventType,
-} from "@/lib/events";
+  getPublishedEvents,
+  getPublishedArticles,
+  pickT,
+} from "@/lib/supabase/queries";
+import type { Event, Article } from "@/lib/supabase/types";
 
 export default async function HomePage(props: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await props.params;
   setRequestLocale(locale);
+  const [events, articles] = await Promise.all([
+    getPublishedEvents(),
+    getPublishedArticles(),
+  ]);
+  const upcoming = events.filter((e) => !isPast(e.date_start)).slice(0, 6);
   return (
     <>
       <Hero />
       <About />
       <WhatWeDo />
-      <LatestEvents />
-      <LatestNews />
+      <LatestEvents events={upcoming} locale={locale} />
+      <LatestNews articles={articles.slice(0, 3)} locale={locale} />
       <Support />
       <Partners />
     </>
@@ -218,20 +224,21 @@ function WhatWeDo() {
   );
 }
 
-const EVENT_ICON: Record<EventType, typeof Users> = {
+const EVENT_ICON: Record<EventKind, typeof Users> = {
   afterwork: Users,
   picnic: Trees,
   ramadan: Moon,
+  default: CalendarClock,
 };
 
-function LatestEvents() {
+function LatestEvents({
+  events,
+  locale,
+}: {
+  events: Event[];
+  locale: string;
+}) {
   const t = useTranslations("Home.events");
-  const te = useTranslations("EventsPage");
-  const locale = useLocale();
-  const list = sortedEvents()
-    .filter((e) => !isPast(e.date))
-    .slice(0, 6);
-
   return (
     <section className="py-24">
       <div className="container-page">
@@ -241,45 +248,57 @@ function LatestEvents() {
           href="/evenements"
           cta={t("all")}
         />
-        <div className="mt-10 -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4 [scrollbar-width:thin]">
-          {list.map((e) => {
-            const Icon = EVENT_ICON[e.type];
-            return (
-              <article
-                key={e.id}
-                className="flex w-72 shrink-0 snap-start flex-col rounded-[var(--radius-card)] border border-line bg-paper p-6"
-              >
-                <span className="grid size-11 place-items-center rounded-2xl bg-teal-tint text-teal">
-                  <Icon className="size-5" aria-hidden />
-                </span>
-                <h3 className="mt-5 font-display text-lg text-ink">
-                  {te(`${e.type}Title`)}
-                </h3>
-                <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-ochre">
-                  <CalendarClock className="size-4" aria-hidden />
-                  {formatEventDate(e.date, locale)}
-                </p>
-                {e.location && (
-                  <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-ink-faint">
-                    <MapPin className="size-3.5" aria-hidden />
-                    {e.location}
+        {events.length === 0 ? (
+          <EmptyState Icon={CalendarClock} label={t("empty")} />
+        ) : (
+          <div className="mt-10 -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4 [scrollbar-width:thin]">
+            {events.map((e) => {
+              const Icon = EVENT_ICON[eventKind(e.slug)];
+              const c = pickT(e.translations, locale);
+              return (
+                <article
+                  key={e.id}
+                  className="flex w-72 shrink-0 snap-start flex-col rounded-[var(--radius-card)] border border-line bg-paper p-6"
+                >
+                  <span className="grid size-11 place-items-center rounded-2xl bg-teal-tint text-teal">
+                    <Icon className="size-5" aria-hidden />
+                  </span>
+                  <h3 className="mt-5 font-display text-lg text-ink">
+                    {c.title}
+                  </h3>
+                  <p className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-ochre">
+                    <CalendarClock className="size-4" aria-hidden />
+                    {formatEventDate(e.date_start, locale)}
                   </p>
-                )}
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
-                  {te(`${e.type}Body`)}
-                </p>
-              </article>
-            );
-          })}
-        </div>
+                  {e.location && (
+                    <p className="mt-1 inline-flex items-center gap-1.5 text-sm text-ink-faint">
+                      <MapPin className="size-3.5" aria-hidden />
+                      {e.location}
+                    </p>
+                  )}
+                  {c.body && (
+                    <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                      {c.body}
+                    </p>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        )}
       </div>
     </section>
   );
 }
 
-function LatestNews() {
+function LatestNews({
+  articles,
+  locale,
+}: {
+  articles: Article[];
+  locale: string;
+}) {
   const t = useTranslations("Home.news");
-  const news: never[] = [];
   return (
     <section className="bg-paper py-24">
       <div className="container-page">
@@ -289,8 +308,32 @@ function LatestNews() {
           href="/actualites"
           cta={t("all")}
         />
-        {news.length === 0 && (
+        {articles.length === 0 ? (
           <EmptyState Icon={Newspaper} label={t("empty")} />
+        ) : (
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {articles.map((a) => {
+              const c = pickT(a.translations, locale);
+              return (
+                <Link
+                  key={a.id}
+                  href={`/actualites/${a.slug}`}
+                  className="group flex flex-col rounded-[var(--radius-card)] border border-line bg-bone p-6 transition-colors hover:border-teal/30"
+                >
+                  <h3 className="font-display text-lg text-ink">{c.title}</h3>
+                  {c.summary && (
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">
+                      {c.summary}
+                    </p>
+                  )}
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-teal">
+                    {t("all")}
+                    <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
         )}
       </div>
     </section>
