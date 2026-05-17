@@ -1,15 +1,19 @@
 {
+  "Meta": {
+    "title": "REAGE — Azeḍḍa n yiqeṛṛuyen d yimsentayen izzayriyen n Tuṛuft",
+    "description": "REAGE tessemlili imezdaɣ izzayriyen n Tuṛuft ɣer Lezzayer: azeḍḍa n yiqeṛṛuyen d yimsentayen i tdamsa, tasentayt d usileɣ."
+  },
   "Nav": {
-    "home": "Tazwart",
-    "about": "Tiddukla",
+    "home": "Agdal",
+    "about": "Ɣef tiddukla",
     "training": "Isileɣen",
+    "events": "Tidyanin",
     "universities": "Tisdawiyin",
     "groups": "Igrawen",
-    "entrepreneurship": "Tasenfart",
+    "entrepreneurship": "Tasentayt",
     "investing": "Asexdem di Lezzayer",
     "agriculture": "Tafellaḥt",
     "finance": "Tadrimt",
-    "events": "Tidyanin",
     "news": "Isallen",
     "membership": "Anekcum",
     "contact": "Anermes",
@@ -17,62 +21,221 @@
     "menu": "Umuɣ",
     "close": "Mdel"
   },
-  "Lang": {
-    "label": "Tutlayt"
-  },
+  "Lang": { "label": "Tutlayt" },
   "Home": {
     "hero": {
       "kicker": "Azeḍḍa n yimezdaɣ izzayriyen n Tuṛuft",
       "title": "Nesmuttul izerfan izzayriyen, da akked dihin.",
-      "subtitle": "REAGE tessemlili imḍebbren d yimsewwaqen izzayriyen n Tuṛuft akken ad bnun assaɣen iǧehden d Lezzayer, ad bḍun tamusni, ad sneflin azeḍḍa n laman.",
+      "subtitle": "REAGE tessemlili iqeṛṛuyen d yimsentayen izzayriyen n Tuṛuft akken ad bnun assaɣen iǧehden d Lezzayer, ad bḍun tamusni, ad sgemmun azeḍḍa n laman.",
       "ctaDonate": "Efk tawsa",
       "ctaJoin": "Rnu-aɣ-d"
+    },
+    "members": {
+      "title": "Snat n tarrayin i unekcum",
+      "free": {
+        "title": "Amaslaḍ ilelli",
+        "body": "Rnu-d ɣer temɣiwent baṭel, teqqimeḍ teẓriḍ tidyanin d yisallen n uzeḍḍa."
+      },
+      "paid": {
+        "title": "Amaslaḍ yettxellisen",
+        "body": "Sefrek tiddukla s lexlaṣ aseggasan, tkecmeḍ ɣer tedyanin tusligin d yimyagaren uslig."
+      }
     },
     "about": {
       "kicker": "Anwa-aɣ",
       "title": "Taqenṭert gar yimezdaɣ d Lezzayer",
+      "body": "Tiddukla n usaḍuf 1901 i d-yennulfan deg 2006, REAGE tessemlili tilawin d yirgazen i icudden ɣer tneflit tadamsant n Lezzayer. Nessishil timliliyin, abeddel n tmusni d ulellet, war takebbanit, kan i lmend n tzemmar d yisenfaren.",
       "link": "Issin tiddukla"
     },
     "what": {
       "title": "Ayen i nxeddem",
       "subtitle": "Krad iferdisen deg wul n umahil-nneɣ.",
-      "network": { "title": "Azeḍḍa" },
-      "entrepreneurship": { "title": "Tasenfart" },
-      "training": { "title": "Asileɣ" }
+      "network": {
+        "title": "Azeḍḍa",
+        "body": "Asemlili n yimahalen n yimezdaɣ gar-asen akked yimeskaren idamsanen di Lezzayer."
+      },
+      "entrepreneurship": {
+        "title": "Tasentayt",
+        "body": "Asefrek n tnekfa, asnulfu d yisenfaren i d-yessuffuɣen azal ɣef sin idisan n Wagrakal."
+      },
+      "training": {
+        "title": "Asileɣ",
+        "body": "Abeṭṭu n tmusni s yisileɣen d ulellet i iwatan i wid n wannar."
+      }
     },
     "events": {
       "title": "Tidyanin i d-iteddun",
+      "subtitle": "Timliliyin, tinaḍin d yimyagaren n uzeḍḍa.",
+      "empty": "Ulac tadyant yettwaheggan tura. Uɣal-d ar zdat.",
       "all": "Akk tidyanin"
     },
     "news": {
       "title": "Isallen",
+      "subtitle": "Isallen ineggura n tiddukla d yimaslaḍen-is.",
+      "empty": "Isallen imezwura ad d-asen ar zdat.",
       "all": "Akk isallen"
     },
     "support": {
       "kicker": "Sefrek REAGE",
       "title": "Tallalt-ik tessenfaray azeḍḍa",
-      "ctaDonate": "Efk tawsa s HelloAsso",
-      "ctaMembership": "Uɣal d amaslaḍ",
-      "note": "Tawsa taɣellsant s HelloAsso"
+      "body": "Yal tikci tɛawen REAGE ad tesnulfu timliliyin, ad teɛiwen imawlan n yisenfaren, ad tesǧehed assaɣen gar Tuṛuft d Lezzayer. Lexlaṣ yettwasefrak s laman s HelloAsso — ulac idrimen i iɛeddan deg usmel-a.",
+      "note": "Anekcum d usefrek ttwasefraken s laman s HelloAsso."
     },
     "partners": {
-      "title": "Wid i ɣ-d-iddan"
+      "title": "Wid i ɣ-d-iddan",
+      "subtitle": "Imendiden imseɣwanen d yidamsanen."
     }
   },
   "Footer": {
+    "tagline": "Azeḍḍa n yiqeṛṛuyen d yimsentayen izzayriyen n Tuṛuft.",
     "navTitle": "Tunigin",
     "contactTitle": "Anermes",
     "followTitle": "Ḍfer-aɣ",
     "linkedin": "LinkedIn",
+    "legal": "Tibadutin tusḍifin",
+    "privacy": "Tasertit n tbaḍnit",
     "rights": "Akk izerfan ttwaḥerzen."
   },
   "Common": {
     "readMore": "Ɣeṛ ugar",
-    "backHome": "Uɣal ɣer tzwart",
-    "comingSoon": "Ad d-yas s wakud"
+    "backHome": "Uɣal ɣer ugdal",
+    "comingSoon": "Ad d-yili ar zdat",
+    "skip": "Ɛeddi ɣer ugbur"
   },
   "NotFound": {
     "title": "Asebter ur yettwaf ara",
     "body": "Asebter i tettnadiḍ ulac-it neɣ yettwasmutti."
+  },
+  "Presentation": {
+    "kicker": "Tiddukla",
+    "title": "Anwa-aɣ",
+    "intro": "REAGE — Azeḍḍa n yiqeṛṛuyen d yimsentayen izzayriyen n Tuṛuft — d tiddukla n usaḍuf 1901 i icudden imezdaɣ izzayriyen n Tuṛuft ɣer Lezzayer, ɣef tdamsa, tasentayt d usileɣ.",
+    "missionTitle": "Tawuri-nneɣ",
+    "missionLead": "REAGE tettnadi krad iswiyen:",
+    "mission1": "Tallalt i tneflit tinmettant-tadamsant n Lezzayer.",
+    "mission2": "Asbeggen n temɣiwent n yiqeṛṛuyen d yimsentayen di temɣiwent tagraɣlant.",
+    "mission3": "Asneddu n yimeskaren idamsanen i nnfeɛ n Lezzayer.",
+    "visionTitle": "Tamuɣli-nneɣ",
+    "visionBody": "Asǧehed n wassaɣen idamsanen gar Lezzayer d Tuṛuft s tdukliwin timaynutin i yedderen: abeṭṭu n tmusni, asexdem amyenṭaḍ d uselken n tezmert, ɣef sin idisan n Wagrakal — war takebbanit.",
+    "historyTitle": "Amezruy-nneɣ",
+    "historyBody": "Tlul-d seg tnekfa i d-yebdan di tlemmast n yiseggasen 1990 sɣur imahalen izzayriyen d yifransis-izzayriyen, tiddukla tettwarna s wudem unṣib ass n 1 Fuṛaṛ 2006, deffir uɣtas i ittwaṭṭfen deg unejmuɛ adamsan ass n 14 Yunyu 2005 di ESCP.",
+    "governanceTitle": "Tanag't",
+    "governanceBody": "REAGE d tiddukla i yseddu usaḍuf aftransis n 1901. Aselway: Fetah Ouazzani."
+  },
+  "Formation": {
+    "title": "Asileɣ",
+    "intro": "Isileɣen ileqqaqen s usenfer i usǧehed n tzemmar d usemɣer n tsentayt, ɣef krad iferdisen: asnerni n tzemmar, tallalt i tsentayt d ulellet udmawan.",
+    "programsTitle": "Ahilen-nneɣ",
+    "p1Title": "Awal zdat n medden",
+    "p1Body": "Erbeḥ tasusmi d tmara deg umeslay, sken tazmert-ik deg uskan.",
+    "p2Title": "Imahilen n uwellih",
+    "p2Body": "Seg tneɣrit ɣer uskan: gzu imahilen n uwellih, kcem ɣer-sen.",
+    "p3Title": "Tigzi tadamsant",
+    "p3Body": "Tiririt tilaqt i twennaḍt tamaynut n tkebbaniyin.",
+    "note": "Ahilen s usenfer, tanzagt tuksawt."
+  },
+  "Contact": {
+    "title": "Anermes",
+    "body": "Asteqsi, asenfar, neɣ tebɣiḍ ad ternuḍ ɣer uzeḍḍa? Aru-aɣ-d, ad k-d-nerr s zzerb.",
+    "emailLabel": "Imayl"
+  },
+  "Legal": {
+    "legalTitle": "Tibadutin tusḍifin",
+    "legalIntro": "S wudem n usaḍuf afransis uṭṭun 2004-575 n 21 Yunyu 2004 ɣef laman deg tdamsa tumḍint, atnan yisalen usḍifen n usmel reage.org.",
+    "s1Title": "Amaẓrag n usmel",
+    "s1Body": "Tiddukla REAGE — Azeḍḍa n yiqeṛṛuyen d yimsentayen izzayriyen n Tuṛuft, tiddukla ur nettnadi tanfa, i yseddu usaḍuf afransis n 1 Yulyu 1901 d umersum-is n 16 Ɣuct 1901. Uṭṭun RNA: ad yettwasmad. Axxam agejdan: ad yettwasmad. Imayl: {email}.",
+    "s2Title": "Anemhal n usuffeɣ",
+    "s2Body": "Aselway n tiddukla, Fetah Ouazzani.",
+    "s3Title": "Aseftaɣ",
+    "s3Body": "Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, Iwunak Yedduklen — vercel.com.",
+    "s4Title": "Taɣara tadelsant",
+    "s4Body": "Akk ugbur n usmel (iḍrisen, alugu, iferdisen iẓuranen d wuglanen) d ayla uslig n tiddukla REAGE, anagar ma yella nniḍen. Yegdel yal asɣan, asbeggen, asnifel, asuffeɣ neɣ asegzi, slami neɣ s tama, war turagt s tira uqbel.",
+    "s5Title": "Asɣan",
+    "s5Body": "Tiddukla tettnadi ad tessiget tikta n yisalen i d-yeffɣen maca ur tezmir ad tili d tamasayt n tuccḍiwin, n wayen iruḥen neɣ n war-ll′iẓri, ula d ixessaren usrid neɣ arusrid i d-iteddun seg unekcum neɣ useqdec n usmel.",
+    "s6Title": "Iseɣwan ibeṛṛaniyen d lexlaṣ",
+    "s6Body": "Asmel yettazen ɣer yimeẓla wis tlata, ladɣa HelloAsso (tiwsatin, anekcum, tisemt) d LinkedIn. Tiddukla mačči d tamasayt n ugbur neɣ n tnezzanin n yimeẓla-a. Ulac lexlaṣ i yettwasefraken deg reage.org.",
+    "s7Title": "Azref yettwasnasen",
+    "s7Body": "Tibadutin-a tusḍifin seddunt-tent yisaḍufen ifransisen. Yal amennuɣ ɣef usegzi-nsent neɣ ɣef useqdec n usmel yuɣal ɣer tsenbaḍin tifransisin tilaqin.",
+    "privacyTitle": "Tasertit n tbaḍnit",
+    "privacyIntro": "Tiddukla REAGE tefka azal ameqqran i ḥraz n yisefka-ik udmawanen, tḥuza ad ten-tessefrek s wudem n RGPD d usaḍuf n tsenselkimt d tlelliyin.",
+    "p1Title": "Amasay n usefrek",
+    "p1Body": "Tiddukla REAGE, i tzemreḍ ad tt-tnermseḍ deg {email}, d tamasayt n usefrek n yisefka i d-yettwagemren s usmel-a.",
+    "p2Title": "Isefka i d-yettwagemren",
+    "p2Body": "Asmel-a d asmel n ubeggen: ur yettsra ara asnulfu n umiḍan. Isefka kan i yettusefraken d wid i d-tettazneḍ mi tettaruḍ-aɣ-d (isem, lqeb, imayl d ugbur n yizen). Anekcum, tiwsatin d ujerred yettxellisen ttwasefraken srid s HelloAsso; isefka-a ur ɛeddan ara deg reage.org.",
+    "p3Title": "Iswiyen",
+    "p3Body": "Tiririt ɣef yisuturen-ik, asefrek n wassaɣ d yimaslaḍen d wid i ɣ-iḥemmlen, d usalɣu-ik s yisallen n tiddukla mi tqebleḍ.",
+    "p4Title": "Llsas usḍif",
+    "p4Body": "Aqbal-ik, aselken n tmesɣiwin send-amyaɣ neɣ tigawin tnegmant, d wsedmer usḍif n tiddukla ad tesnerni azeḍḍa-s.",
+    "p5Title": "Imextaren",
+    "p5Body": "Isefka i yimaslaḍen iturgan n tiddukla kan. Ur ttwazenzen ara, ur ttwafkan ara i wis tlata i yiswiyen tinezzanin. Lexlaṣ yettwasefrak s HelloAsso i yseddu tasertit-is n tbaḍnit.",
+    "p6Title": "Tanzagt n uḥraz",
+    "p6Body": "Isuturen n unermes: 3 iseggasen seg unermes aneggaru. Ajerred ɣer tedyant neɣ usileɣ: 5 iseggasen deffir-s. Ulac isefka i yettwaḥerzen sennig wayen ilaqen i yiswiyen.",
+    "p7Title": "Izerfan-ik",
+    "p7Body": "Ɣur-k izerfan n unekcum, useggem, ukkes, useɣẓen, ugdal d uɛeddi. Akken ad ten-tesseqdaceḍ, aru ɣer {email}; nḥuza ad d-nerr deg wayyur d aɣelnaw. Tzemreḍ daɣen ad tazneḍ asuter ɣer CNIL (cnil.fr).",
+    "p8Title": "Inagan n tuqqna",
+    "p8Body": "Asmel-a ur yesseqdac ula d yiwen unagan n uḍfar neɣ allal n uktal n tarbaɛt wis tlata. Ad ttwasersen kan inagan itiknikanen ilaqen i tikli-s.",
+    "p9Title": "Aleqqem",
+    "p9Body": "Tasertit-a tzemmer ad tettwabeddel akken ad d-tessken ibeddilen usḍifen neɣ n usmel. I yal asteqsi ɣef yisefka-ik, nermes {email}."
+  },
+  "AboutPage": {
+    "kicker": "Tiddukla",
+    "title": "Ɣef tiddukla",
+    "intro": "REAGE tessemlili imezdaɣ izzayriyen n Tuṛuft ɣer Lezzayer, ɣef tdamsa, tasentayt d usileɣ — war takebbanit.",
+    "howTitle": "Amek tetteddu",
+    "howBody": "Azeḍḍa yettwasuddes s yigrawen isentanen (tasentayt, asexdem, tadrimt, tafellaḥt, asileɣ) d yigrawen n yimezwura s tesdawit. Yal agraw yettusefrak s yiɛeggalen i yebɣan, yeldi i yimaslaḍen.",
+    "boardTitle": "Aseqqamu amsefrak",
+    "boardBody": "Aseqqamu amsefrak yessemlili udmawen seg umaḍal adamsan d unelmad i uwellih n tigawin n tiddukla. Talɣa tufrint ad d-tas ar zdat.",
+    "orgTitle": "Asuddes",
+    "orgBody": "Asuddes agensan (asqamu, tismilin, igrawen) ad yettwafru ar zdat.",
+    "historyTitle": "Amezruy",
+    "historyBody": "Yelul-d seg tnekfa i d-yebdan di tlemmast n yiseggasen 1990 sɣur imahalen izzayriyen d yifransis-izzayriyen, tiddukla tettwarna s wudem unṣib ass n 1 Fuṛaṛ 2006, deffir unejmuɛ adamsan ass n 14 Yunyu 2005 di ESCP. Aselway: Fetah Ouazzani.",
+    "impactTitle": "Asfrir",
+    "impactBody": "Inarpayen idamsanen, tinaḍin d temliliyin smelqayen meyyat n yimahalen, ssishlen tideukliwin gar Tuṛuft d Lezzayer. Asɣan ufrin ad d-yas ar zdat."
+  },
+  "EventsPage": {
+    "kicker": "Imyagaren n uzeḍḍa",
+    "title": "Tidyanin",
+    "intro": "Af-d izenziyen i d-iteddun n uzeḍḍa d tsuffaɣ tizeryanin.",
+    "upcomingTitle": "I d-iteddun",
+    "pastTitle": "Tisuffaɣ tizeryanin",
+    "upcoming": "I d-iteddun",
+    "past": "Yezrin",
+    "afterworkTitle": "After-work",
+    "afterworkBody": "Tamlilit tarurmidt gar yimaslaḍen seg yal annar. Tiɣimit taneggarut tesmelqa azal n meyyat n yemdanen seg yal taɣult.",
+    "picnicTitle": "Lqella aseggasan",
+    "picnicBody": "Imaslaḍen d twaculin myagaren di Paris deg tegnit yelhan.",
+    "ramadanTitle": "Imensi n Ṛemḍan",
+    "ramadanBody": "Imensi aseggasan n Ṛemḍan yesmelqay azeḍḍa ɣef yiwen n laftaṛ aṛfiq (azemz ɣur-s, yettwasentem yal aseggas).",
+    "dynamicNote": "Ulac tadyant yettwasuffɣen tura. Uɣal-d ar zdat.",
+    "register": "Jerred"
+  },
+  "GroupsPage": {
+    "kicker": "Azeḍḍa s usentel",
+    "title": "Igrawen",
+    "intro": "REAGE yettwasuddes s yigrawen isentanen. Yal agraw yesmelqay imaslaḍen ɣef usentel, yettusefrak s yiɛeggalen i yebɣan. Igrawen nniḍen ad d-ldin ar zdat.",
+    "leaderLabel": "Amḍebbar",
+    "createdLabel": "Yettwarna deg",
+    "soon": "Agraw deg usbeddi",
+    "entrepreneurshipTitle": "Tasentayt",
+    "entrepreneurshipBody": "Allel n yimawlan n yisenfaren d usnulfu ɣef sin idisan n Wagrakal.",
+    "investingTitle": "Asexdem di Lezzayer",
+    "investingBody": "Abeṭṭu n yisalen d tegnatin i usexdem d tsentayt di Lezzayer.",
+    "trainingTitle": "Isileɣen",
+    "trainingBody": "Ahilen d ulellet i usnerni n tzemmar. Wali asebter n yisileɣen.",
+    "agricultureTitle": "Tafellaḥt",
+    "agricultureBody": "Annaren ifellaḥen d tneẓẓut: agraw deg usbeddi.",
+    "financeTitle": "Tadrimt",
+    "financeBody": "Tabankit, isuqen d uɣawsa: agraw deg usbeddi.",
+    "view": "Wali agraw"
+  },
+  "UniversitiesPage": {
+    "kicker": "Igrawen n yimezwura",
+    "title": "Tisdawiyin",
+    "intro": "Yal tasdawit tameqqrant ɣur-s agraw n yimezwura deg REAGE, di Fṛansa d beṛṛa. Nadi tin-ik.",
+    "searchPlaceholder": "Nadi tasdawit…",
+    "createdLabel": "Agraw yettwarnan deg",
+    "soon": "Agraw deg usbeddi",
+    "empty": "Ulac tasdawit i yemṣadan d unadi-k.",
+    "cta": "Rnu ɣer ugraw-a"
   }
 }

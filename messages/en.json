@@ -21,9 +21,7 @@
     "menu": "Menu",
     "close": "Close"
   },
-  "Lang": {
-    "label": "Language"
-  },
+  "Lang": { "label": "Language" },
   "Home": {
     "hero": {
       "kicker": "Network of the Algerian diaspora in Europe",
@@ -80,7 +78,7 @@
     "support": {
       "kicker": "Support REAGE",
       "title": "Your support moves the network forward",
-      "body": "Every donation helps REAGE host gatherings, mentor project leaders and strengthen ties between Europe and Algeria. Payments are securely handled by HelloAsso — no money passes through this site.",
+      "body": "Every contribution helps REAGE host gatherings, mentor project leaders and strengthen ties between Europe and Algeria. Payments are securely handled by HelloAsso — no money passes through this site.",
       "note": "Membership and support securely handled by HelloAsso."
     },
     "partners": {
@@ -111,7 +109,7 @@
   "Presentation": {
     "kicker": "The association",
     "title": "Who we are",
-    "intro": "REAGE — the Network of Algerian executives and entrepreneurs in Europe — is a non-profit association connecting the Algerian diaspora in Europe with Algeria, around economy, entrepreneurship and training.",
+    "intro": "REAGE — Network of Algerian executives and entrepreneurs in Europe — is a non-profit association connecting the Algerian diaspora in Europe with Algeria, around economy, entrepreneurship and training.",
     "missionTitle": "Our mission",
     "missionLead": "REAGE pursues three goals:",
     "mission1": "Contribute to Algeria's socio-economic development.",
@@ -145,7 +143,7 @@
     "legalTitle": "Legal notice",
     "legalIntro": "In accordance with French law no. 2004-575 of 21 June 2004 on confidence in the digital economy, here is the legal information for the reage.org website.",
     "s1Title": "Site publisher",
-    "s1Body": "Association REAGE — Network of Algerian executives and entrepreneurs in Europe, a non-profit association governed by the French law of 1 July 1901. RNA number: to be completed. Registered office: to be completed. Email: {email}.",
+    "s1Body": "Association REAGE — Network of Algerian executives and entrepreneurs in Europe, a non-profit association governed by the French law of 1 July 1901 and its decree of 16 August 1901. RNA number: to be completed. Registered office: to be completed. Email: {email}.",
     "s2Title": "Publication director",
     "s2Body": "The association's president, Fetah Ouazzani.",
     "s3Title": "Hosting",
@@ -179,10 +177,25 @@
     "p9Title": "Updates",
     "p9Body": "This policy may be amended to reflect legal or site changes. For any question regarding your data, contact {email}."
   },
+  "AboutPage": {
+    "kicker": "The association",
+    "title": "About us",
+    "intro": "REAGE connects the Algerian diaspora in Europe with Algeria, around economy, entrepreneurship and training — with no partisan affiliation.",
+    "howTitle": "How it works",
+    "howBody": "The network is organised into thematic groups (entrepreneurship, investment, finance, agriculture, training) and alumni groups by university. Each group is run by volunteers and open to members.",
+    "boardTitle": "Advisory board",
+    "boardBody": "An advisory board brings together figures from the economic and academic worlds to guide the association's actions. Detailed composition coming soon.",
+    "orgTitle": "Organisation",
+    "orgBody": "The internal organisation (board, committees, groups) will be detailed soon.",
+    "historyTitle": "History",
+    "historyBody": "Born of initiatives launched in the mid-1990s by Algerian and Franco-Algerian professionals, the association was officially founded on 1 February 2006, following an economic conference held on 14 June 2005 at ESCP. President: Fetah Ouazzani.",
+    "impactTitle": "Impact",
+    "impactBody": "Economic forums, conferences and gatherings have brought together hundreds of professionals and fostered collaborations between Europe and Algeria. Detailed review coming soon."
+  },
   "EventsPage": {
     "kicker": "Network gatherings",
     "title": "Events",
-    "intro": "The network's upcoming dates and past editions.",
+    "intro": "Find the network's upcoming dates and past editions.",
     "upcomingTitle": "Upcoming",
     "pastTitle": "Past editions",
     "upcoming": "Upcoming",
@@ -195,5 +208,34 @@
     "ramadanBody": "The annual Ramadan dinner brings the network together around a friendly iftar (approximate date, confirmed each year).",
     "dynamicNote": "No published events yet. Check back soon.",
     "register": "Register"
+  },
+  "GroupsPage": {
+    "kicker": "The network by theme",
+    "title": "Groups",
+    "intro": "REAGE is organised into thematic groups. Each group gathers members around a topic and is run by volunteers. More groups will open soon.",
+    "leaderLabel": "Lead",
+    "createdLabel": "Created in",
+    "soon": "Group being formed",
+    "entrepreneurshipTitle": "Entrepreneurship",
+    "entrepreneurshipBody": "Supporting project leaders and innovation on both shores of the Mediterranean.",
+    "investingTitle": "Investing in Algeria",
+    "investingBody": "Sharing information and opportunities to invest and do business in Algeria.",
+    "trainingTitle": "Training",
+    "trainingBody": "Programmes and mentoring to build skills. See the Training page.",
+    "agricultureTitle": "Agriculture",
+    "agricultureBody": "Agricultural sectors and agri-industry: a group being formed.",
+    "financeTitle": "Finance",
+    "financeBody": "Banking, markets and financing: a group being formed.",
+    "view": "View the group"
+  },
+  "UniversitiesPage": {
+    "kicker": "Alumni groups",
+    "title": "Universities",
+    "intro": "Every major university has its alumni group within REAGE, in France and abroad. Search for yours.",
+    "searchPlaceholder": "Search for a university…",
+    "createdLabel": "Group created in",
+    "soon": "Group being formed",
+    "empty": "No university matches your search.",
+    "cta": "Join this group"
   }
 }
