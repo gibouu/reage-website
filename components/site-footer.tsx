@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LinkedInIcon } from "@/components/icons";
+import { Logo } from "@/components/logo";
 import { navItems, site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -13,14 +14,7 @@ export function SiteFooter() {
       <div className="amazigh-rule" aria-hidden />
       <div className="container-page grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="grid size-8 place-items-center rounded-md bg-teal text-bone">
-              <span className="font-display text-lg leading-none">R</span>
-            </span>
-            <span className="font-display text-2xl tracking-tight">
-              {site.name}
-            </span>
-          </div>
+          <Logo />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
             {t("Footer.tagline")}
           </p>
@@ -31,16 +25,26 @@ export function SiteFooter() {
             {t("Footer.navTitle")}
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm">
-            {navItems.map((item) => (
-              <li key={item.key}>
-                <Link
-                  href={item.href}
-                  className="text-ink-soft transition-colors hover:text-teal"
-                >
-                  {t(`Nav.${item.key}`)}
-                </Link>
-              </li>
-            ))}
+            {navItems
+              .filter((item) => item.key !== "home")
+              .map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="text-ink-soft transition-colors hover:text-teal"
+                  >
+                    {t(`Nav.${item.key}`)}
+                  </Link>
+                </li>
+              ))}
+            <li>
+              <Link
+                href="/contact"
+                className="text-ink-soft transition-colors hover:text-teal"
+              >
+                {t("Nav.contact")}
+              </Link>
+            </li>
           </ul>
         </div>
 

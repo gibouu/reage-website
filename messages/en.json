@@ -5,9 +5,15 @@
   },
   "Nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About us",
     "training": "Training",
     "events": "Events",
+    "universities": "Universities",
+    "groups": "Groups",
+    "entrepreneurship": "Entrepreneurship",
+    "investing": "Investing in Algeria",
+    "agriculture": "Agriculture",
+    "finance": "Finance",
     "news": "News",
     "membership": "Membership",
     "contact": "Contact",
@@ -25,6 +31,17 @@
       "subtitle": "REAGE brings together Algerian executives and entrepreneurs in Europe to build lasting ties with Algeria, share knowledge and grow a network of trust.",
       "ctaDonate": "Donate",
       "ctaJoin": "Join us"
+    },
+    "members": {
+      "title": "Two ways to join",
+      "free": {
+        "title": "Free member",
+        "body": "Join the community for free and stay informed about the network's events and news."
+      },
+      "paid": {
+        "title": "Contributing member",
+        "body": "Support the association with an annual fee and access exclusive events and private gatherings."
+      }
     },
     "about": {
       "kicker": "Who we are",
@@ -84,10 +101,82 @@
   "Common": {
     "readMore": "Read more",
     "backHome": "Back to home",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "skip": "Skip to content"
   },
   "NotFound": {
     "title": "Page not found",
     "body": "The page you are looking for does not exist or has moved."
+  },
+  "Presentation": {
+    "kicker": "The association",
+    "title": "Who we are",
+    "intro": "REAGE — the Network of Algerian executives and entrepreneurs in Europe — is a non-profit association connecting the Algerian diaspora in Europe with Algeria, around economy, entrepreneurship and training.",
+    "missionTitle": "Our mission",
+    "missionLead": "REAGE pursues three goals:",
+    "mission1": "Contribute to Algeria's socio-economic development.",
+    "mission2": "Promote the community of executives and entrepreneurs internationally.",
+    "mission3": "Mobilise economic players for the benefit of Algeria.",
+    "visionTitle": "Our vision",
+    "visionBody": "Strengthening economic ties between Algeria and Europe through innovative, lasting partnerships: exchange of expertise, cross-investment and know-how transfer across the Mediterranean — with no partisan affiliation.",
+    "historyTitle": "Our history",
+    "historyBody": "Born of initiatives launched in the mid-1990s by Algerian and Franco-Algerian professionals, the association was officially founded on 1 February 2006, following a decision taken at an economic conference on 14 June 2005 at ESCP.",
+    "governanceTitle": "Governance",
+    "governanceBody": "REAGE is a non-profit association under the French law of 1901. President: Fetah Ouazzani."
+  },
+  "Formation": {
+    "title": "Training",
+    "intro": "Flexible, online training to build skills and encourage entrepreneurship, around three pillars: upskilling, entrepreneurship support and personalised mentoring.",
+    "programsTitle": "Our programmes",
+    "p1Title": "Public speaking",
+    "p1Body": "Gain confidence and impact when speaking, and reveal your presentation potential.",
+    "p2Title": "Consulting careers",
+    "p2Body": "From strategy to organisation: understand and access consulting careers.",
+    "p3Title": "Economic intelligence",
+    "p3Body": "The necessary response to the new business environment.",
+    "note": "Online programmes, flexible duration."
+  },
+  "Contact": {
+    "title": "Contact",
+    "body": "A question, a project, an interest in joining the network? Write to us — we'll reply quickly.",
+    "emailLabel": "Email"
+  },
+  "Legal": {
+    "legalTitle": "Legal notice",
+    "legalIntro": "In accordance with French law no. 2004-575 of 21 June 2004 on confidence in the digital economy, here is the legal information for the reage.org website.",
+    "s1Title": "Site publisher",
+    "s1Body": "Association REAGE — Network of Algerian executives and entrepreneurs in Europe, a non-profit association governed by the French law of 1 July 1901. RNA number: to be completed. Registered office: to be completed. Email: {email}.",
+    "s2Title": "Publication director",
+    "s2Body": "The association's president, Fetah Ouazzani.",
+    "s3Title": "Hosting",
+    "s3Body": "Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA — vercel.com.",
+    "s4Title": "Intellectual property",
+    "s4Body": "All site content (text, logo, graphics and visuals) is the exclusive property of the REAGE association unless otherwise stated. Any reproduction, representation, modification, publication or adaptation, in whole or in part, is prohibited without prior written authorisation.",
+    "s5Title": "Liability",
+    "s5Body": "The association strives to ensure the accuracy of published information but cannot be held liable for errors, omissions or unavailability, nor for any direct or indirect damage resulting from accessing or using the site.",
+    "s6Title": "External links and payments",
+    "s6Body": "The site links to third-party services, notably HelloAsso (donations, membership, ticketing) and LinkedIn. The association is not responsible for the content or practices of these services. No payment is processed on reage.org.",
+    "s7Title": "Applicable law",
+    "s7Body": "This legal notice is governed by French law. Any dispute relating to its interpretation or to the use of the site falls under the competent French courts.",
+    "privacyTitle": "Privacy policy",
+    "privacyIntro": "The REAGE association attaches great importance to protecting your personal data and is committed to processing it in compliance with the General Data Protection Regulation (GDPR) and applicable data-protection law.",
+    "p1Title": "Data controller",
+    "p1Body": "The REAGE association, reachable at {email}, is the controller of data collected via this site.",
+    "p2Title": "Data collected",
+    "p2Body": "This is a presentation website: no account creation is required. The only data processed is what you send us when you write (name, email address and message content). Membership, donations and paid registrations are handled directly by HelloAsso; that data does not pass through reage.org.",
+    "p3Title": "Purposes",
+    "p3Body": "To respond to your requests, manage the relationship with members and supporters, and — with your consent — keep you informed of the association's news.",
+    "p4Title": "Legal basis",
+    "p4Body": "Your consent, the performance of pre-contractual or contractual measures, and the association's legitimate interest in running and growing its network.",
+    "p5Title": "Recipients",
+    "p5Body": "Data is intended solely for the association's authorised members. It is neither sold nor transferred to third parties for commercial purposes. Payments are processed by HelloAsso under its own privacy policy.",
+    "p6Title": "Retention period",
+    "p6Body": "Contact requests: 3 years from the last exchange. Event or training registrations: 5 years afterwards. No data is kept beyond what is necessary for the stated purposes.",
+    "p7Title": "Your rights",
+    "p7Body": "You have the rights of access, rectification, erasure, restriction, objection and portability. To exercise them, write to {email}; we undertake to reply within one month at most. You may also lodge a complaint with the CNIL (cnil.fr).",
+    "p8Title": "Cookies",
+    "p8Body": "This site uses no tracking cookies or third-party analytics. Only strictly technical cookies, necessary for it to work, may be set.",
+    "p9Title": "Updates",
+    "p9Body": "This policy may be amended to reflect legal or site changes. For any question regarding your data, contact {email}."
   }
 }

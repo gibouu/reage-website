@@ -44,10 +44,28 @@ export async function generateMetadata(props: {
 }): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "Meta" });
+  const title = t("title");
+  const description = t("description");
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     metadataBase: new URL("https://reage.org"),
+    applicationName: "REAGE",
+    alternates: {
+      canonical: `/${locale}`,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [l, `/${l}`]),
+      ),
+    },
+    openGraph: {
+      type: "website",
+      siteName: "REAGE",
+      title,
+      description,
+      locale,
+      url: `/${locale}`,
+    },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -60,6 +78,7 @@ export default async function LocaleLayout(props: {
   setRequestLocale(locale);
 
   const meta = localeMeta[locale as Locale];
+  const tCommon = await getTranslations({ locale, namespace: "Common" });
 
   return (
     <html
@@ -70,8 +89,16 @@ export default async function LocaleLayout(props: {
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-teal focus:px-5 focus:py-3 focus:text-bone"
+          >
+            {tCommon("skip")}
+          </a>
           <SiteHeader />
-          <main className="flex-1">{props.children}</main>
+          <main id="main" tabIndex={-1} className="flex-1">
+            {props.children}
+          </main>
           <SiteFooter />
         </NextIntlClientProvider>
       </body>

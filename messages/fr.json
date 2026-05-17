@@ -5,9 +5,16 @@
   },
   "Nav": {
     "home": "Accueil",
-    "about": "L'association",
-    "training": "Formation",
+    "about": "À propos",
+    "home": "Accueil",
+    "training": "Formations",
     "events": "Événements",
+    "universities": "Universités",
+    "groups": "Groupes",
+    "entrepreneurship": "Entrepreneuriat",
+    "investing": "Investir en Algérie",
+    "agriculture": "Agriculture",
+    "finance": "Finance",
     "news": "Actualités",
     "membership": "Adhésion",
     "contact": "Contact",
@@ -25,6 +32,17 @@
       "subtitle": "REAGE rassemble les cadres et entrepreneurs algériens d'Europe pour tisser des liens durables avec l'Algérie, partager les savoirs et faire grandir un réseau de confiance.",
       "ctaDonate": "Faire un don",
       "ctaJoin": "Nous rejoindre"
+    },
+    "members": {
+      "title": "Deux façons de rejoindre",
+      "free": {
+        "title": "Membre libre",
+        "body": "Rejoignez gratuitement la communauté et restez informé des événements et actualités du réseau."
+      },
+      "paid": {
+        "title": "Membre cotisant",
+        "body": "Soutenez l'association par une cotisation annuelle et accédez aux événements exclusifs et rencontres privées."
+      }
     },
     "about": {
       "kicker": "Qui sommes-nous",
@@ -84,7 +102,8 @@
   "Common": {
     "readMore": "Lire la suite",
     "backHome": "Retour à l'accueil",
-    "comingSoon": "Bientôt disponible"
+    "comingSoon": "Bientôt disponible",
+    "skip": "Aller au contenu"
   },
   "NotFound": {
     "title": "Page introuvable",
@@ -122,5 +141,105 @@
     "title": "Contact",
     "body": "Une question, un projet, une envie de rejoindre le réseau ? Écrivez-nous, nous vous répondrons rapidement.",
     "emailLabel": "Email"
+  },
+  "Legal": {
+    "legalTitle": "Mentions légales",
+    "legalIntro": "Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, voici les informations légales relatives au site reage.org.",
+    "s1Title": "Éditeur du site",
+    "s1Body": "Association REAGE — Réseau des cadres et entrepreneurs algériens d'Europe, association à but non lucratif régie par la loi du 1er juillet 1901 et son décret du 16 août 1901. Numéro RNA : à compléter. Siège social : à compléter. Courriel : {email}.",
+    "s2Title": "Directeur de la publication",
+    "s2Body": "Le président de l'association, Fetah Ouazzani.",
+    "s3Title": "Hébergeur",
+    "s3Body": "Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis — vercel.com.",
+    "s4Title": "Propriété intellectuelle",
+    "s4Body": "L'ensemble des contenus du site (textes, logo, éléments graphiques et visuels) est la propriété exclusive de l'association REAGE, sauf mention contraire. Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation écrite préalable.",
+    "s5Title": "Responsabilité",
+    "s5Body": "L'association s'efforce d'assurer l'exactitude des informations publiées mais ne saurait être tenue responsable des erreurs, omissions ou indisponibilités, ni des dommages directs ou indirects résultant de l'accès ou de l'usage du site.",
+    "s6Title": "Liens externes et paiements",
+    "s6Body": "Le site renvoie vers des services tiers, notamment HelloAsso (dons, adhésions, billetterie) et LinkedIn. L'association n'est pas responsable du contenu ni des pratiques de ces services. Aucun paiement n'est traité sur reage.org.",
+    "s7Title": "Droit applicable",
+    "s7Body": "Les présentes mentions légales sont régies par le droit français. Tout litige relatif à leur interprétation ou à l'utilisation du site relève des tribunaux français compétents.",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyIntro": "L'association REAGE accorde une grande importance à la protection de vos données personnelles et s'engage à les traiter dans le respect du Règlement général sur la protection des données (RGPD) et de la loi Informatique et Libertés.",
+    "p1Title": "Responsable du traitement",
+    "p1Body": "L'association REAGE, joignable à {email}, est responsable du traitement des données collectées via ce site.",
+    "p2Title": "Données collectées",
+    "p2Body": "Ce site est un site de présentation : aucune création de compte n'est requise. Les seules données traitées le sont lorsque vous nous écrivez (nom, prénom, adresse email et contenu de votre message). Les adhésions, dons et inscriptions payantes sont gérés directement par HelloAsso ; ces données ne transitent pas par reage.org.",
+    "p3Title": "Finalités",
+    "p3Body": "Répondre à vos demandes, gérer la relation avec les membres et sympathisants, et, lorsque vous y consentez, vous informer des actualités de l'association.",
+    "p4Title": "Base légale",
+    "p4Body": "Votre consentement, l'exécution de mesures précontractuelles ou contractuelles, et l'intérêt légitime de l'association à animer et développer son réseau.",
+    "p5Title": "Destinataires",
+    "p5Body": "Les données sont destinées aux seuls membres habilités de l'association. Elles ne sont ni vendues ni cédées à des tiers à des fins commerciales. Les paiements sont traités par HelloAsso, soumis à sa propre politique de confidentialité.",
+    "p6Title": "Durée de conservation",
+    "p6Body": "Demandes de contact : 3 ans à compter du dernier échange. Inscriptions à un événement ou une formation : 5 ans après celui-ci. Aucune donnée n'est conservée au-delà de ce qui est nécessaire aux finalités poursuivies.",
+    "p7Title": "Vos droits",
+    "p7Body": "Vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Pour les exercer, écrivez à {email} ; nous nous engageons à répondre dans un délai maximum d'un mois. Vous pouvez également introduire une réclamation auprès de la CNIL (cnil.fr).",
+    "p8Title": "Cookies",
+    "p8Body": "Ce site n'utilise aucun cookie de suivi ni outil de mesure d'audience tiers. Seuls des cookies strictement techniques, nécessaires à son bon fonctionnement, peuvent être déposés.",
+    "p9Title": "Mise à jour",
+    "p9Body": "La présente politique peut être modifiée afin de refléter les évolutions légales ou du site. Pour toute question relative à vos données, contactez {email}."
+  },
+  "AboutPage": {
+    "kicker": "L'association",
+    "title": "À propos",
+    "intro": "REAGE relie la diaspora algérienne d'Europe à l'Algérie, autour de l'économie, de l'entrepreneuriat et de la formation — sans appartenance partisane.",
+    "howTitle": "Comment ça marche",
+    "howBody": "Le réseau s'organise en groupes thématiques (entrepreneuriat, investissement, finance, agriculture, formation) et en groupes d'anciens par université. Chaque groupe est animé par des bénévoles et ouvert aux membres.",
+    "boardTitle": "Conseil consultatif",
+    "boardBody": "Un conseil consultatif réunit des personnalités du monde économique et académique pour orienter les actions de l'association. Composition détaillée prochainement.",
+    "orgTitle": "Organisation",
+    "orgBody": "L'organisation interne (bureau, commissions, groupes) sera détaillée prochainement.",
+    "historyTitle": "Histoire",
+    "historyBody": "Née d'initiatives lancées au milieu des années 1990 par des professionnels algériens et franco-algériens, l'association a été officiellement créée le 1er février 2006, à la suite d'une conférence économique tenue le 14 juin 2005 à l'ESCP. Président : Fetah Ouazzani.",
+    "impactTitle": "Impact",
+    "impactBody": "Forums économiques, conférences et rencontres ont rassemblé des centaines de professionnels et favorisé des collaborations entre l'Europe et l'Algérie. Bilan détaillé prochainement."
+  },
+  "EventsPage": {
+    "kicker": "Rendez-vous du réseau",
+    "title": "Événements",
+    "intro": "Au-delà des rencontres ponctuelles, REAGE organise des rendez-vous récurrents tout au long de l'année.",
+    "recurringTitle": "Nos rendez-vous annuels",
+    "iftarTitle": "Dîner du Ramadan",
+    "iftarWhen": "Chaque année, le 13 du mois grégorien de la mi-Ramadan (ex. 13 février)",
+    "iftarBody": "Le dîner annuel du Ramadan réunit le réseau autour d'un iftar convivial. Il a lieu chaque année à la mi-Ramadan, le 13 du mois grégorien correspondant.",
+    "afterworkTitle": "After-work",
+    "afterworkWhen": "4 fois par an, le dernier mardi du mois (janvier, avril, juillet, septembre)",
+    "afterworkBody": "Quatre after-works par an, un par trimestre, le dernier mardi du mois, pour échanger dans un cadre informel.",
+    "picnicTitle": "Pique-nique annuel",
+    "picnicWhen": "12 juillet, Paris",
+    "picnicBody": "Le pique-nique annuel rassemble membres et familles à Paris, dans une ambiance détendue.",
+    "highlightTitle": "Temps fort",
+    "highlightBody": "L'after-work du 29 avril a été un succès, accueilli à la Grande Mosquée de Paris.",
+    "dynamicNote": "Les prochaines dates précises et les inscriptions seront publiées ici."
+  },
+  "GroupsPage": {
+    "kicker": "Le réseau par thème",
+    "title": "Groupes",
+    "intro": "REAGE s'organise en groupes thématiques. Chaque groupe rassemble des membres autour d'un sujet et est animé par des bénévoles. D'autres groupes ouvriront prochainement.",
+    "leaderLabel": "Référent",
+    "createdLabel": "Créé en",
+    "soon": "Groupe en cours de constitution",
+    "entrepreneurshipTitle": "Entrepreneuriat",
+    "entrepreneurshipBody": "Accompagner les porteurs de projets et l'innovation, des deux côtés de la Méditerranée.",
+    "investingTitle": "Investir en Algérie",
+    "investingBody": "Partager l'information et les opportunités pour investir et entreprendre en Algérie.",
+    "trainingTitle": "Formations",
+    "trainingBody": "Programmes et mentorat pour monter en compétences. Voir la page Formations.",
+    "agricultureTitle": "Agriculture",
+    "agricultureBody": "Filières agricoles et agro-industrie : un groupe en cours de constitution.",
+    "financeTitle": "Finance",
+    "financeBody": "Banque, marchés et financement : un groupe en cours de constitution.",
+    "view": "Voir le groupe"
+  },
+  "UniversitiesPage": {
+    "kicker": "Groupes d'anciens",
+    "title": "Universités",
+    "intro": "Chaque grande université dispose de son groupe d'anciens au sein de REAGE, en France et à l'étranger. Recherchez la vôtre.",
+    "searchPlaceholder": "Rechercher une université…",
+    "createdLabel": "Groupe créé en",
+    "soon": "Groupe en cours de constitution",
+    "empty": "Aucune université ne correspond à votre recherche.",
+    "cta": "Rejoindre ce groupe"
   }
 }
