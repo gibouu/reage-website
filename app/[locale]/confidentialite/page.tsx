@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { PageShell } from "@/components/page-shell";
+import { site } from "@/lib/site";
 
 export default async function Page(props: {
   params: Promise<{ locale: string }>;
@@ -11,14 +12,12 @@ export default async function Page(props: {
 }
 
 function Content() {
-  const t = useTranslations();
+  const t = useTranslations("Legal");
   return (
-    <PageShell title={t("Footer.privacy")}>
+    <PageShell title={t("privacyTitle")}>
       <p className="max-w-2xl leading-relaxed text-ink-soft">
-        Les paiements (dons, adhésions, billetterie) sont gérés directement par
-        HelloAsso ; aucune donnée de paiement ne transite par ce site.
+        {t("privacyBody", { email: site.email })}
       </p>
-      <p className="mt-6 text-sm text-ink-faint">{t("Common.comingSoon")}</p>
     </PageShell>
   );
 }

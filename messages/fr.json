@@ -84,7 +84,8 @@
   "Common": {
     "readMore": "Lire la suite",
     "backHome": "Retour à l'accueil",
-    "comingSoon": "Bientôt disponible"
+    "comingSoon": "Bientôt disponible",
+    "skip": "Aller au contenu"
   },
   "NotFound": {
     "title": "Page introuvable",
@@ -122,5 +123,11 @@
     "title": "Contact",
     "body": "Une question, un projet, une envie de rejoindre le réseau ? Écrivez-nous, nous vous répondrons rapidement.",
     "emailLabel": "Email"
+  },
+  "Legal": {
+    "legalTitle": "Mentions légales",
+    "legalBody": "REAGE — Réseau des cadres et entrepreneurs algériens d'Europe — association régie par la loi française de 1901. Contact de publication : {email}. Hébergement : Vercel Inc.",
+    "privacyTitle": "Politique de confidentialité",
+    "privacyBody": "Ce site ne collecte aucune donnée personnelle et n'utilise aucun cookie de suivi. Les paiements (dons, adhésions, billetterie) sont intégralement gérés par HelloAsso ; aucune donnée de paiement ne transite par ce site. Pour toute demande relative à vos données, écrivez à {email}."
   }
 }

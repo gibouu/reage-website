@@ -84,7 +84,8 @@
   "Common": {
     "readMore": "اقرأ المزيد",
     "backHome": "العودة إلى الرئيسية",
-    "comingSoon": "قريبًا"
+    "comingSoon": "قريبًا",
+    "skip": "تخطَّ إلى المحتوى"
   },
   "NotFound": {
     "title": "الصفحة غير موجودة",

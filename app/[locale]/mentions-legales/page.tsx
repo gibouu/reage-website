@@ -12,20 +12,12 @@ export default async function Page(props: {
 }
 
 function Content() {
-  const t = useTranslations();
+  const t = useTranslations("Legal");
   return (
-    <PageShell title={t("Footer.legal")}>
+    <PageShell title={t("legalTitle")}>
       <p className="max-w-2xl leading-relaxed text-ink-soft">
-        {site.longName} — association loi 1901. Contact :{" "}
-        <a
-          href={`mailto:${site.email}`}
-          className="text-teal hover:text-ochre"
-        >
-          {site.email}
-        </a>
-        .
+        {t("legalBody", { email: site.email })}
       </p>
-      <p className="mt-6 text-sm text-ink-faint">{t("Common.comingSoon")}</p>
     </PageShell>
   );
 }

@@ -84,10 +84,50 @@
   "Common": {
     "readMore": "Read more",
     "backHome": "Back to home",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "skip": "Skip to content"
   },
   "NotFound": {
     "title": "Page not found",
     "body": "The page you are looking for does not exist or has moved."
+  },
+  "Presentation": {
+    "kicker": "The association",
+    "title": "Who we are",
+    "intro": "REAGE — the Network of Algerian executives and entrepreneurs in Europe — is a non-profit association connecting the Algerian diaspora in Europe with Algeria, around economy, entrepreneurship and training.",
+    "missionTitle": "Our mission",
+    "missionLead": "REAGE pursues three goals:",
+    "mission1": "Contribute to Algeria's socio-economic development.",
+    "mission2": "Promote the community of executives and entrepreneurs internationally.",
+    "mission3": "Mobilise economic players for the benefit of Algeria.",
+    "visionTitle": "Our vision",
+    "visionBody": "Strengthening economic ties between Algeria and Europe through innovative, lasting partnerships: exchange of expertise, cross-investment and know-how transfer across the Mediterranean — with no partisan affiliation.",
+    "historyTitle": "Our history",
+    "historyBody": "Born of initiatives launched in the mid-1990s by Algerian and Franco-Algerian professionals, the association was officially founded on 1 February 2006, following a decision taken at an economic conference on 14 June 2005 at ESCP.",
+    "governanceTitle": "Governance",
+    "governanceBody": "REAGE is a non-profit association under the French law of 1901. President: Fetah Ouazzani."
+  },
+  "Formation": {
+    "title": "Training",
+    "intro": "Flexible, online training to build skills and encourage entrepreneurship, around three pillars: upskilling, entrepreneurship support and personalised mentoring.",
+    "programsTitle": "Our programmes",
+    "p1Title": "Public speaking",
+    "p1Body": "Gain confidence and impact when speaking, and reveal your presentation potential.",
+    "p2Title": "Consulting careers",
+    "p2Body": "From strategy to organisation: understand and access consulting careers.",
+    "p3Title": "Economic intelligence",
+    "p3Body": "The necessary response to the new business environment.",
+    "note": "Online programmes, flexible duration."
+  },
+  "Contact": {
+    "title": "Contact",
+    "body": "A question, a project, an interest in joining the network? Write to us — we'll reply quickly.",
+    "emailLabel": "Email"
+  },
+  "Legal": {
+    "legalTitle": "Legal notice",
+    "legalBody": "REAGE — Network of Algerian executives and entrepreneurs in Europe — non-profit association under the French law of 1901. Publication contact: {email}. Hosting: Vercel Inc.",
+    "privacyTitle": "Privacy policy",
+    "privacyBody": "This site collects no personal data and uses no tracking cookies. Payments (donations, membership, ticketing) are handled entirely by HelloAsso; no payment data passes through this site. For any request regarding your data, contact {email}."
   }
 }

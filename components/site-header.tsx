@@ -56,6 +56,7 @@ export function SiteHeader() {
               <Link
                 key={item.key}
                 href={item.href}
+                aria-current={active ? "page" : undefined}
                 className={cn(
                   "rounded-full px-3.5 py-2 text-sm transition-colors",
                   active
