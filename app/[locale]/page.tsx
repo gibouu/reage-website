@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { ButtonLink } from "@/components/ui/button";
+import { Logo } from "@/components/logo";
 import { partners, site } from "@/lib/site";
 
 export default async function HomePage(props: {
@@ -103,8 +104,8 @@ function Hero() {
             }}
           />
           <div className="absolute inset-x-0 bottom-0 p-8">
-            <p className="font-display text-2xl text-bone">{site.name}</p>
-            <p className="mt-1 text-sm text-bone/70">
+            <Logo variant="light" className="h-10" />
+            <p className="mt-3 text-sm text-bone/70">
               {site.longName} · {site.founded}
             </p>
           </div>

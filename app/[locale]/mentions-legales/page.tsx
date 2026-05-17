@@ -13,11 +13,22 @@ export default async function Page(props: {
 
 function Content() {
   const t = useTranslations("Legal");
+  const sections = ["s1", "s2", "s3", "s4", "s5", "s6", "s7"];
   return (
     <PageShell title={t("legalTitle")}>
       <p className="max-w-2xl leading-relaxed text-ink-soft">
-        {t("legalBody", { email: site.email })}
+        {t("legalIntro")}
       </p>
+      <div className="mt-12 max-w-2xl space-y-10">
+        {sections.map((s) => (
+          <section key={s}>
+            <h2 className="font-display text-xl text-ink">{t(`${s}Title`)}</h2>
+            <p className="mt-2 leading-relaxed text-ink-soft">
+              {t(`${s}Body`, { email: site.email })}
+            </p>
+          </section>
+        ))}
+      </div>
     </PageShell>
   );
 }

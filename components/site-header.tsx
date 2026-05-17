@@ -8,6 +8,7 @@ import { navItems, site } from "@/lib/site";
 import { ButtonLink } from "@/components/ui/button";
 import { LinkedInIcon } from "@/components/icons";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -36,17 +37,8 @@ export function SiteHeader() {
       )}
     >
       <div className="container-page flex h-18 items-center justify-between gap-4">
-        <Link
-          href="/"
-          className="group flex items-center gap-2.5"
-          aria-label={site.name}
-        >
-          <span className="grid size-8 place-items-center rounded-md bg-teal text-bone transition-colors group-hover:bg-ochre">
-            <span className="font-display text-lg leading-none">R</span>
-          </span>
-          <span className="font-display text-2xl tracking-tight text-ink">
-            {site.name}
-          </span>
+        <Link href="/" aria-label={site.name} className="shrink-0">
+          <Logo priority />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
