@@ -30,8 +30,6 @@ export const navItems: NavItem[] = [
       { key: "investing", href: "/groupes#investir" },
       { key: "agriculture", href: "/groupes#agriculture" },
       { key: "finance", href: "/groupes#finance" },
-      { key: "universities", href: "/universites" },
-      { key: "training", href: "/formation" },
     ],
   },
   { key: "training", href: "/formation" },
@@ -50,7 +48,6 @@ export const groups = [
     key: "investing",
     created: "2006",
   },
-  { slug: "formations", key: "training", href: "/formation", created: "2006" },
   { slug: "agriculture", key: "agriculture" },
   { slug: "finance", key: "finance" },
 ] as const;
