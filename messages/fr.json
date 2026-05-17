@@ -5,9 +5,16 @@
   },
   "Nav": {
     "home": "Accueil",
-    "about": "L'association",
-    "training": "Formation",
+    "about": "À propos",
+    "home": "Accueil",
+    "training": "Formations",
     "events": "Événements",
+    "universities": "Universités",
+    "groups": "Groupes",
+    "entrepreneurship": "Entrepreneuriat",
+    "investing": "Investir en Algérie",
+    "agriculture": "Agriculture",
+    "finance": "Finance",
     "news": "Actualités",
     "membership": "Adhésion",
     "contact": "Contact",
@@ -25,6 +32,17 @@
       "subtitle": "REAGE rassemble les cadres et entrepreneurs algériens d'Europe pour tisser des liens durables avec l'Algérie, partager les savoirs et faire grandir un réseau de confiance.",
       "ctaDonate": "Faire un don",
       "ctaJoin": "Nous rejoindre"
+    },
+    "members": {
+      "title": "Deux façons de rejoindre",
+      "free": {
+        "title": "Membre libre",
+        "body": "Rejoignez gratuitement la communauté et restez informé des événements et actualités du réseau."
+      },
+      "paid": {
+        "title": "Membre cotisant",
+        "body": "Soutenez l'association par une cotisation annuelle et accédez aux événements exclusifs et rencontres privées."
+      }
     },
     "about": {
       "kicker": "Qui sommes-nous",
@@ -161,5 +179,67 @@
     "p8Body": "Ce site n'utilise aucun cookie de suivi ni outil de mesure d'audience tiers. Seuls des cookies strictement techniques, nécessaires à son bon fonctionnement, peuvent être déposés.",
     "p9Title": "Mise à jour",
     "p9Body": "La présente politique peut être modifiée afin de refléter les évolutions légales ou du site. Pour toute question relative à vos données, contactez {email}."
+  },
+  "AboutPage": {
+    "kicker": "L'association",
+    "title": "À propos",
+    "intro": "REAGE relie la diaspora algérienne d'Europe à l'Algérie, autour de l'économie, de l'entrepreneuriat et de la formation — sans appartenance partisane.",
+    "howTitle": "Comment ça marche",
+    "howBody": "Le réseau s'organise en groupes thématiques (entrepreneuriat, investissement, finance, agriculture, formation) et en groupes d'anciens par université. Chaque groupe est animé par des bénévoles et ouvert aux membres.",
+    "boardTitle": "Conseil consultatif",
+    "boardBody": "Un conseil consultatif réunit des personnalités du monde économique et académique pour orienter les actions de l'association. Composition détaillée prochainement.",
+    "orgTitle": "Organisation",
+    "orgBody": "L'organisation interne (bureau, commissions, groupes) sera détaillée prochainement.",
+    "historyTitle": "Histoire",
+    "historyBody": "Née d'initiatives lancées au milieu des années 1990 par des professionnels algériens et franco-algériens, l'association a été officiellement créée le 1er février 2006, à la suite d'une conférence économique tenue le 14 juin 2005 à l'ESCP. Président : Fetah Ouazzani.",
+    "impactTitle": "Impact",
+    "impactBody": "Forums économiques, conférences et rencontres ont rassemblé des centaines de professionnels et favorisé des collaborations entre l'Europe et l'Algérie. Bilan détaillé prochainement."
+  },
+  "EventsPage": {
+    "kicker": "Rendez-vous du réseau",
+    "title": "Événements",
+    "intro": "Au-delà des rencontres ponctuelles, REAGE organise des rendez-vous récurrents tout au long de l'année.",
+    "recurringTitle": "Nos rendez-vous annuels",
+    "iftarTitle": "Dîner du Ramadan",
+    "iftarWhen": "Chaque année, le 13 du mois grégorien de la mi-Ramadan (ex. 13 février)",
+    "iftarBody": "Le dîner annuel du Ramadan réunit le réseau autour d'un iftar convivial. Il a lieu chaque année à la mi-Ramadan, le 13 du mois grégorien correspondant.",
+    "afterworkTitle": "After-work",
+    "afterworkWhen": "4 fois par an, le dernier mardi du mois (janvier, avril, juillet, septembre)",
+    "afterworkBody": "Quatre after-works par an, un par trimestre, le dernier mardi du mois, pour échanger dans un cadre informel.",
+    "picnicTitle": "Pique-nique annuel",
+    "picnicWhen": "12 juillet, Paris",
+    "picnicBody": "Le pique-nique annuel rassemble membres et familles à Paris, dans une ambiance détendue.",
+    "highlightTitle": "Temps fort",
+    "highlightBody": "L'after-work du 29 avril a été un succès, accueilli à la Grande Mosquée de Paris.",
+    "dynamicNote": "Les prochaines dates précises et les inscriptions seront publiées ici."
+  },
+  "GroupsPage": {
+    "kicker": "Le réseau par thème",
+    "title": "Groupes",
+    "intro": "REAGE s'organise en groupes thématiques. Chaque groupe rassemble des membres autour d'un sujet et est animé par des bénévoles. D'autres groupes ouvriront prochainement.",
+    "leaderLabel": "Référent",
+    "createdLabel": "Créé en",
+    "soon": "Groupe en cours de constitution",
+    "entrepreneurshipTitle": "Entrepreneuriat",
+    "entrepreneurshipBody": "Accompagner les porteurs de projets et l'innovation, des deux côtés de la Méditerranée.",
+    "investingTitle": "Investir en Algérie",
+    "investingBody": "Partager l'information et les opportunités pour investir et entreprendre en Algérie.",
+    "trainingTitle": "Formations",
+    "trainingBody": "Programmes et mentorat pour monter en compétences. Voir la page Formations.",
+    "agricultureTitle": "Agriculture",
+    "agricultureBody": "Filières agricoles et agro-industrie : un groupe en cours de constitution.",
+    "financeTitle": "Finance",
+    "financeBody": "Banque, marchés et financement : un groupe en cours de constitution.",
+    "view": "Voir le groupe"
+  },
+  "UniversitiesPage": {
+    "kicker": "Groupes d'anciens",
+    "title": "Universités",
+    "intro": "Chaque grande université dispose de son groupe d'anciens au sein de REAGE, en France et à l'étranger. Recherchez la vôtre.",
+    "searchPlaceholder": "Rechercher une université…",
+    "createdLabel": "Groupe créé en",
+    "soon": "Groupe en cours de constitution",
+    "empty": "Aucune université ne correspond à votre recherche.",
+    "cta": "Rejoindre ce groupe"
   }
 }

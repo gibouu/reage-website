@@ -25,16 +25,26 @@ export function SiteFooter() {
             {t("Footer.navTitle")}
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm">
-            {navItems.map((item) => (
-              <li key={item.key}>
-                <Link
-                  href={item.href}
-                  className="text-ink-soft transition-colors hover:text-teal"
-                >
-                  {t(`Nav.${item.key}`)}
-                </Link>
-              </li>
-            ))}
+            {navItems
+              .filter((item) => item.key !== "home")
+              .map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="text-ink-soft transition-colors hover:text-teal"
+                  >
+                    {t(`Nav.${item.key}`)}
+                  </Link>
+                </li>
+              ))}
+            <li>
+              <Link
+                href="/contact"
+                className="text-ink-soft transition-colors hover:text-teal"
+              >
+                {t("Nav.contact")}
+              </Link>
+            </li>
           </ul>
         </div>
 

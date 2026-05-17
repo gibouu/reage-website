@@ -8,6 +8,7 @@ import {
   CalendarDays,
   Newspaper,
   Heart,
+  Star,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { ButtonLink } from "@/components/ui/button";
@@ -35,6 +36,7 @@ export default async function HomePage(props: {
 function Hero() {
   const t = useTranslations("Home.hero");
   const tNav = useTranslations("Nav");
+  const tM = useTranslations("Home.members");
   return (
     <section className="relative overflow-hidden">
       <div
@@ -83,7 +85,7 @@ function Hero() {
         </div>
 
         <div
-          className="reveal relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line bg-teal"
+          className="reveal relative overflow-hidden rounded-[2rem] border border-line bg-teal p-8 md:p-10"
           style={{ animationDelay: "200ms" }}
         >
           <div
@@ -95,7 +97,7 @@ function Hero() {
             }}
           />
           <div
-            className="absolute inset-0 opacity-[0.16]"
+            className="absolute inset-0 opacity-[0.14]"
             aria-hidden
             style={{
               backgroundImage:
@@ -103,11 +105,35 @@ function Hero() {
               backgroundSize: "28px 20px",
             }}
           />
-          <div className="absolute inset-x-0 bottom-0 p-8">
-            <Logo variant="light" className="h-10" />
-            <p className="mt-3 text-sm text-bone/70">
-              {site.longName} · {site.founded}
+          <div className="relative">
+            <Logo variant="light" className="h-8" />
+            <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-ochre">
+              {tM("title")}
             </p>
+            <div className="mt-4 space-y-4">
+              <div className="rounded-2xl border border-bone/15 bg-bone/5 p-5">
+                <div className="flex items-center gap-2 text-bone">
+                  <Users className="size-4 text-ochre" aria-hidden />
+                  <h2 className="font-display text-lg">
+                    {tM("free.title")}
+                  </h2>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-bone/75">
+                  {tM("free.body")}
+                </p>
+              </div>
+              <div className="rounded-2xl border border-ochre/40 bg-bone/5 p-5">
+                <div className="flex items-center gap-2 text-bone">
+                  <Star className="size-4 text-ochre" aria-hidden />
+                  <h2 className="font-display text-lg">
+                    {tM("paid.title")}
+                  </h2>
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-bone/75">
+                  {tM("paid.body")}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

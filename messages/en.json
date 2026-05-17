@@ -5,9 +5,15 @@
   },
   "Nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About us",
     "training": "Training",
     "events": "Events",
+    "universities": "Universities",
+    "groups": "Groups",
+    "entrepreneurship": "Entrepreneurship",
+    "investing": "Investing in Algeria",
+    "agriculture": "Agriculture",
+    "finance": "Finance",
     "news": "News",
     "membership": "Membership",
     "contact": "Contact",
@@ -25,6 +31,17 @@
       "subtitle": "REAGE brings together Algerian executives and entrepreneurs in Europe to build lasting ties with Algeria, share knowledge and grow a network of trust.",
       "ctaDonate": "Donate",
       "ctaJoin": "Join us"
+    },
+    "members": {
+      "title": "Two ways to join",
+      "free": {
+        "title": "Free member",
+        "body": "Join the community for free and stay informed about the network's events and news."
+      },
+      "paid": {
+        "title": "Contributing member",
+        "body": "Support the association with an annual fee and access exclusive events and private gatherings."
+      }
     },
     "about": {
       "kicker": "Who we are",
