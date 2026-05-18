@@ -30,9 +30,9 @@ export function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("Footer.linkedin")}
-              className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
+              className="inline-flex items-center gap-2 whitespace-nowrap text-ink-soft transition-colors hover:text-teal"
             >
-              <LinkedInIcon className="size-4" />
+              <LinkedInIcon className="size-4 shrink-0" />
               {t("Footer.linkedin")}
             </a>
             <a
