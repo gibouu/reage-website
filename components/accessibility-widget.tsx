@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Accessibility, X } from "lucide-react";
+import { PersonStanding, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "reage:a11y:readable-font";
@@ -113,7 +113,7 @@ export function AccessibilityWidget() {
           "inline-flex size-12 items-center justify-center rounded-full bg-teal text-bone shadow-[0_8px_24px_-8px_rgba(14,77,73,0.6)] transition-colors hover:bg-teal-dark",
         )}
       >
-        <Accessibility className="size-6" aria-hidden />
+        <PersonStanding className="size-6" aria-hidden />
       </button>
     </div>
   );
