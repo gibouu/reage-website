@@ -12,27 +12,17 @@ export const site = {
   joinUrl: "https://www.helloasso.com/associations/reage/adhesions/adhesion",
 } as const;
 
-// Top navigation. "Groups" carries a dropdown of thematic sub-groups; every
-// other item is one click. The join CTA lives separately in the header.
-export type NavChild = { key: string; href: string };
-export type NavItem = { key: string; href: string; children?: NavChild[] };
+// Flat top navigation (5 items, no dropdowns). "Notre expertise" is a hub
+// page that branches to Groupes / Réseau universitaire / Formation. The join
+// CTA lives separately in the header.
+export type NavItem = { key: string; href: string };
 
 export const navItems: NavItem[] = [
   { key: "home", href: "/" },
-  { key: "about", href: "/presentation" },
-  { key: "events", href: "/evenements" },
-  { key: "universities", href: "/universites" },
-  {
-    key: "groups",
-    href: "/groupes",
-    children: [
-      { key: "entrepreneurship", href: "/groupes#entrepreneuriat" },
-      { key: "investing", href: "/groupes#investir" },
-      { key: "agriculture", href: "/groupes#agriculture" },
-      { key: "finance", href: "/groupes#finance" },
-    ],
-  },
-  { key: "training", href: "/formation" },
+  { key: "discover", href: "/nous-decouvrir" },
+  { key: "events", href: "/nos-evenements" },
+  { key: "expertise", href: "/notre-expertise" },
+  { key: "news", href: "/nos-actualites" },
 ];
 
 // Thematic groups shown on /groupes. `leader`/`email`/`created` are optional —

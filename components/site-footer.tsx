@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LinkedInIcon } from "@/components/icons";
 import { Logo } from "@/components/logo";
-import { navItems, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export function SiteFooter() {
   const t = useTranslations();
@@ -12,7 +12,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-line bg-paper">
       <div className="amazigh-rule" aria-hidden />
-      <div className="container-page grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="container-page grid gap-12 py-16 md:grid-cols-2">
         <div>
           <Logo />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
@@ -20,35 +20,7 @@ export function SiteFooter() {
           </p>
         </div>
 
-        <div>
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
-            {t("Footer.navTitle")}
-          </h2>
-          <ul className="mt-4 space-y-2.5 text-sm">
-            {navItems
-              .filter((item) => item.key !== "home")
-              .map((item) => (
-                <li key={item.key}>
-                  <Link
-                    href={item.href}
-                    className="text-ink-soft transition-colors hover:text-teal"
-                  >
-                    {t(`Nav.${item.key}`)}
-                  </Link>
-                </li>
-              ))}
-            <li>
-              <Link
-                href="/contact"
-                className="text-ink-soft transition-colors hover:text-teal"
-              >
-                {t("Nav.contact")}
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
+        <div className="md:justify-self-end">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
             {t("Footer.contactTitle")}
           </h2>
@@ -72,6 +44,14 @@ export function SiteFooter() {
                 <LinkedInIcon className="size-4" />
                 {t("Footer.linkedin")}
               </a>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="text-ink-soft transition-colors hover:text-teal"
+              >
+                {t("Nav.contact")}
+              </Link>
             </li>
           </ul>
         </div>
