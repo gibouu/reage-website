@@ -244,5 +244,12 @@
     "formationTitle": "Formation",
     "formationBody": "Formations en ligne et mentorat pour monter en compétences.",
     "cta": "Découvrir"
+  },
+  "A11y": {
+    "button": "Accessibilité",
+    "title": "Accessibilité",
+    "readableFont": "Police plus lisible",
+    "readableFontHint": "Active une police à haute lisibilité.",
+    "close": "Fermer"
   }
 }

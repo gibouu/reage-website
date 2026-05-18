@@ -52,6 +52,14 @@
     font-family: var(--font-tifinagh), var(--font-sans);
   }
 
+  /* Accessibility: high-legibility font opt-in (Latin locales only — Arabic
+     and Tifinagh keep their dedicated script fonts). */
+  html[data-readable-font="true"]:not([lang="ar"]):not([data-script="tifinagh"]) body,
+  html[data-readable-font="true"]:not([lang="ar"]):not([data-script="tifinagh"]) .font-display {
+    font-family: var(--font-readable), var(--font-sans);
+    letter-spacing: 0.01em;
+  }
+
   .font-display {
     font-family: var(--font-display);
     font-weight: 500;
