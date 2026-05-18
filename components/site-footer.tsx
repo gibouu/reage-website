@@ -26,13 +26,6 @@ export function SiteFooter() {
           </h2>
           <div className="mt-4 flex flex-row items-center justify-between gap-4 text-sm md:flex-col md:items-end md:gap-3">
             <a
-              href={`mailto:${site.email}`}
-              className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
-            >
-              <Mail className="size-4" aria-hidden />
-              {site.email}
-            </a>
-            <a
               href={site.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -41,6 +34,13 @@ export function SiteFooter() {
             >
               <LinkedInIcon className="size-4" />
               {t("Footer.linkedin")}
+            </a>
+            <a
+              href={`mailto:${site.email}`}
+              aria-label={site.email}
+              className="text-ink-soft transition-colors hover:text-teal"
+            >
+              <Mail className="size-4" aria-hidden />
             </a>
           </div>
         </div>
