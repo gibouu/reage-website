@@ -5,23 +5,18 @@
   },
   "Nav": {
     "home": "Home",
-    "about": "About us",
-    "training": "Training",
-    "events": "Events",
-    "universities": "Universities",
-    "groups": "Groups",
-    "entrepreneurship": "Entrepreneurship",
-    "investing": "Investing in Algeria",
-    "agriculture": "Agriculture",
-    "finance": "Finance",
-    "news": "News",
-    "membership": "Membership",
+    "discover": "About us",
+    "events": "Our events",
+    "expertise": "Our expertise",
+    "news": "Our news",
     "contact": "Contact",
     "join": "Join us",
     "menu": "Menu",
     "close": "Close"
   },
-  "Lang": { "label": "Language" },
+  "Lang": {
+    "label": "Language"
+  },
   "Home": {
     "hero": {
       "kicker": "Network of the Algerian diaspora in Europe",
@@ -70,7 +65,7 @@
       "all": "All events"
     },
     "news": {
-      "title": "News",
+      "title": "Our news",
       "subtitle": "The latest from the association and its members.",
       "empty": "The first news is coming soon.",
       "all": "All news"
@@ -194,7 +189,7 @@
   },
   "EventsPage": {
     "kicker": "Network gatherings",
-    "title": "Events",
+    "title": "Our events",
     "intro": "Find the network's upcoming dates and past editions.",
     "upcomingTitle": "Upcoming",
     "pastTitle": "Past editions",
@@ -230,12 +225,24 @@
   },
   "UniversitiesPage": {
     "kicker": "Alumni groups",
-    "title": "Universities",
+    "title": "University network",
     "intro": "Every major university has its alumni group within REAGE, in France and abroad. Search for yours.",
     "searchPlaceholder": "Search for a university…",
     "createdLabel": "Group created in",
     "soon": "Group being formed",
     "empty": "No university matches your search.",
     "cta": "Join this group"
+  },
+  "ExpertisePage": {
+    "kicker": "Our know-how",
+    "title": "Our expertise",
+    "intro": "Three areas at the heart of REAGE's work. Choose the one that interests you.",
+    "groupsTitle": "Groups",
+    "groupsBody": "Thematic groups — entrepreneurship, investment, finance, agriculture — run by volunteers.",
+    "universitiesTitle": "University network",
+    "universitiesBody": "Alumni groups by university, in France and abroad.",
+    "formationTitle": "Training",
+    "formationBody": "Online training and mentoring to build skills.",
+    "cta": "Explore"
   }
 }

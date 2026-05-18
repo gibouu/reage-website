@@ -49,7 +49,7 @@ export async function saveEvent(formData: FormData) {
     : await supabase.from("events").insert(row);
   if (error) throw new Error(error.message);
 
-  revalidatePath(`/${locale}/evenements`);
+  revalidatePath(`/${locale}/nos-evenements`);
   revalidatePath(`/${locale}`);
   redirect(`/${locale}/admin`);
 }
@@ -62,7 +62,7 @@ export async function deleteEvent(formData: FormData) {
     .delete()
     .eq("id", str(formData, "id"));
   if (error) throw new Error(error.message);
-  revalidatePath(`/${locale}/evenements`);
+  revalidatePath(`/${locale}/nos-evenements`);
   redirect(`/${locale}/admin`);
 }
 
@@ -100,7 +100,7 @@ export async function saveArticle(formData: FormData) {
     : await supabase.from("articles").insert(row);
   if (error) throw new Error(error.message);
 
-  revalidatePath(`/${locale}/actualites`);
+  revalidatePath(`/${locale}/nos-actualites`);
   revalidatePath(`/${locale}`);
   redirect(`/${locale}/admin`);
 }
@@ -113,6 +113,6 @@ export async function deleteArticle(formData: FormData) {
     .delete()
     .eq("id", str(formData, "id"));
   if (error) throw new Error(error.message);
-  revalidatePath(`/${locale}/actualites`);
+  revalidatePath(`/${locale}/nos-actualites`);
   redirect(`/${locale}/admin`);
 }

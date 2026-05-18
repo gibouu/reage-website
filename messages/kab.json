@@ -5,23 +5,18 @@
   },
   "Nav": {
     "home": "Agdal",
-    "about": "Ɣef tiddukla",
-    "training": "Isileɣen",
-    "events": "Tidyanin",
-    "universities": "Tisdawiyin",
-    "groups": "Igrawen",
-    "entrepreneurship": "Tasentayt",
-    "investing": "Asexdem di Lezzayer",
-    "agriculture": "Tafellaḥt",
-    "finance": "Tadrimt",
-    "news": "Isallen",
-    "membership": "Anekcum",
+    "discover": "Issin-aɣ",
+    "events": "Tidyanin-nneɣ",
+    "expertise": "Tamusni-nneɣ",
+    "news": "Isallen-nneɣ",
     "contact": "Anermes",
     "join": "Rnu-aɣ-d",
     "menu": "Umuɣ",
     "close": "Mdel"
   },
-  "Lang": { "label": "Tutlayt" },
+  "Lang": {
+    "label": "Tutlayt"
+  },
   "Home": {
     "hero": {
       "kicker": "Azeḍḍa n yimezdaɣ izzayriyen n Tuṛuft",
@@ -70,7 +65,7 @@
       "all": "Akk tidyanin"
     },
     "news": {
-      "title": "Isallen",
+      "title": "Isallen-nneɣ",
       "subtitle": "Isallen ineggura n tiddukla d yimaslaḍen-is.",
       "empty": "Isallen imezwura ad d-asen ar zdat.",
       "all": "Akk isallen"
@@ -179,7 +174,7 @@
   },
   "AboutPage": {
     "kicker": "Tiddukla",
-    "title": "Ɣef tiddukla",
+    "title": "Issin-aɣ",
     "intro": "REAGE tessemlili imezdaɣ izzayriyen n Tuṛuft ɣer Lezzayer, ɣef tdamsa, tasentayt d usileɣ — war takebbanit.",
     "howTitle": "Amek tetteddu",
     "howBody": "Azeḍḍa yettwasuddes s yigrawen isentanen (tasentayt, asexdem, tadrimt, tafellaḥt, asileɣ) d yigrawen n yimezwura s tesdawit. Yal agraw yettusefrak s yiɛeggalen i yebɣan, yeldi i yimaslaḍen.",
@@ -194,7 +189,7 @@
   },
   "EventsPage": {
     "kicker": "Imyagaren n uzeḍḍa",
-    "title": "Tidyanin",
+    "title": "Tidyanin-nneɣ",
     "intro": "Af-d izenziyen i d-iteddun n uzeḍḍa d tsuffaɣ tizeryanin.",
     "upcomingTitle": "I d-iteddun",
     "pastTitle": "Tisuffaɣ tizeryanin",
@@ -230,12 +225,24 @@
   },
   "UniversitiesPage": {
     "kicker": "Igrawen n yimezwura",
-    "title": "Tisdawiyin",
+    "title": "Azeḍḍa asdawan",
     "intro": "Yal tasdawit tameqqrant ɣur-s agraw n yimezwura deg REAGE, di Fṛansa d beṛṛa. Nadi tin-ik.",
     "searchPlaceholder": "Nadi tasdawit…",
     "createdLabel": "Agraw yettwarnan deg",
     "soon": "Agraw deg usbeddi",
     "empty": "Ulac tasdawit i yemṣadan d unadi-k.",
     "cta": "Rnu ɣer ugraw-a"
+  },
+  "ExpertisePage": {
+    "kicker": "Tamusni-nneɣ",
+    "title": "Tamusni-nneɣ",
+    "intro": "Krad yiɣewwaren deg wul n umahil n REAGE. Fren win i k-iɛeǧben.",
+    "groupsTitle": "Igrawen",
+    "groupsBody": "Igrawen isentanen — tasentayt, asexdem, tadrimt, tafellaḥt — ttwasefraken s yiɛeggalen.",
+    "universitiesTitle": "Azeḍḍa asdawan",
+    "universitiesBody": "Igrawen n yimezwura s tesdawit, di Fṛansa d beṛṛa.",
+    "formationTitle": "Asileɣ",
+    "formationBody": "Isileɣen s usenfer d ulellet i usnerni n tzemmar.",
+    "cta": "Issin"
   }
 }

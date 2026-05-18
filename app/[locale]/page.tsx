@@ -177,7 +177,7 @@ function About() {
         <div>
           <p className="text-lg leading-relaxed text-ink-soft">{t("body")}</p>
           <Link
-            href="/presentation"
+            href="/nous-decouvrir"
             className="mt-6 inline-flex items-center gap-2 font-medium text-teal transition-colors hover:text-ochre"
           >
             {t("link")}
@@ -249,7 +249,7 @@ function LatestEvents({
         <SectionHead
           title={t("title")}
           subtitle={t("subtitle")}
-          href="/evenements"
+          href="/nos-evenements"
           cta={t("all")}
         />
         {events.length === 0 ? (
@@ -309,7 +309,7 @@ function LatestNews({
         <SectionHead
           title={t("title")}
           subtitle={t("subtitle")}
-          href="/actualites"
+          href="/nos-actualites"
           cta={t("all")}
         />
         {articles.length === 0 ? (
@@ -321,7 +321,7 @@ function LatestNews({
               return (
                 <Link
                   key={a.id}
-                  href={`/actualites/${a.slug}`}
+                  href={`/nos-actualites/${a.slug}`}
                   className="group flex flex-col rounded-[var(--radius-card)] border border-line bg-bone p-6 transition-colors hover:border-teal/30"
                 >
                   <h3 className="font-display text-lg text-ink">{c.title}</h3>
@@ -360,7 +360,7 @@ function Support() {
           }}
         />
         <div className="relative max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.18em] text-ochre">
+          <p className="text-sm font-medium uppercase tracking-[0.18em] text-bone/80">
             {t("kicker")}
           </p>
           <h2 className="mt-4 font-display text-3xl leading-tight sm:text-4xl">

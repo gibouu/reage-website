@@ -18,7 +18,7 @@ function Content() {
   return (
     <PageShell
       kicker={t("Home.support.kicker")}
-      title={t("Nav.membership")}
+      title={t("Nav.join")}
     >
       <p className="max-w-2xl text-lg leading-relaxed text-ink-soft">
         {t("Home.support.body")}

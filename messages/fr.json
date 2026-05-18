@@ -5,18 +5,10 @@
   },
   "Nav": {
     "home": "Accueil",
-    "about": "À propos",
-    "home": "Accueil",
-    "training": "Formations",
-    "events": "Événements",
-    "universities": "Universités",
-    "groups": "Groupes",
-    "entrepreneurship": "Entrepreneuriat",
-    "investing": "Investir en Algérie",
-    "agriculture": "Agriculture",
-    "finance": "Finance",
-    "news": "Actualités",
-    "membership": "Adhésion",
+    "discover": "Nous découvrir",
+    "events": "Nos événements",
+    "expertise": "Notre expertise",
+    "news": "Nos actualités",
     "contact": "Contact",
     "join": "Nous rejoindre",
     "menu": "Menu",
@@ -73,7 +65,7 @@
       "all": "Tous les événements"
     },
     "news": {
-      "title": "Actualités",
+      "title": "Nos actualités",
       "subtitle": "Les dernières nouvelles de l'association et de ses membres.",
       "empty": "Les premières actualités arrivent bientôt.",
       "all": "Toutes les actualités"
@@ -182,7 +174,7 @@
   },
   "AboutPage": {
     "kicker": "L'association",
-    "title": "À propos",
+    "title": "Nous découvrir",
     "intro": "REAGE relie la diaspora algérienne d'Europe à l'Algérie, autour de l'économie, de l'entrepreneuriat et de la formation — sans appartenance partisane.",
     "howTitle": "Comment ça marche",
     "howBody": "Le réseau s'organise en groupes thématiques (entrepreneuriat, investissement, finance, agriculture, formation) et en groupes d'anciens par université. Chaque groupe est animé par des bénévoles et ouvert aux membres.",
@@ -197,7 +189,7 @@
   },
   "EventsPage": {
     "kicker": "Rendez-vous du réseau",
-    "title": "Événements",
+    "title": "Nos événements",
     "intro": "Retrouvez les prochaines dates du réseau et les éditions passées.",
     "upcomingTitle": "À venir",
     "pastTitle": "Éditions passées",
@@ -233,12 +225,24 @@
   },
   "UniversitiesPage": {
     "kicker": "Groupes d'anciens",
-    "title": "Universités",
+    "title": "Réseau universitaire",
     "intro": "Chaque grande université dispose de son groupe d'anciens au sein de REAGE, en France et à l'étranger. Recherchez la vôtre.",
     "searchPlaceholder": "Rechercher une université…",
     "createdLabel": "Groupe créé en",
     "soon": "Groupe en cours de constitution",
     "empty": "Aucune université ne correspond à votre recherche.",
     "cta": "Rejoindre ce groupe"
+  },
+  "ExpertisePage": {
+    "kicker": "Notre savoir-faire",
+    "title": "Notre expertise",
+    "intro": "Trois domaines au cœur de l'action de REAGE. Choisissez celui qui vous intéresse.",
+    "groupsTitle": "Groupes",
+    "groupsBody": "Des groupes thématiques — entrepreneuriat, investissement, finance, agriculture — animés par des bénévoles.",
+    "universitiesTitle": "Réseau universitaire",
+    "universitiesBody": "Les groupes d'anciens par université, en France et à l'étranger.",
+    "formationTitle": "Formation",
+    "formationBody": "Formations en ligne et mentorat pour monter en compétences.",
+    "cta": "Découvrir"
   }
 }
