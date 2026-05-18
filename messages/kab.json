@@ -244,5 +244,12 @@
     "formationTitle": "Asileɣ",
     "formationBody": "Isileɣen s usenfer d ulellet i usnerni n tzemmar.",
     "cta": "Issin"
+  },
+  "A11y": {
+    "button": "Tanekcumt",
+    "title": "Tanekcumt",
+    "readableFont": "Tasefsit iqeṛben ɣer tɣuri",
+    "readableFontHint": "Remmed tasefsit i yessishilen taɣuri.",
+    "close": "Mdel"
   }
 }

@@ -7,10 +7,12 @@ import {
   Hanken_Grotesk,
   Noto_Sans_Arabic,
   Noto_Sans_Tifinagh,
+  Atkinson_Hyperlegible,
 } from "next/font/google";
 import { routing, localeMeta, type Locale } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { AccessibilityWidget } from "@/components/accessibility-widget";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -33,6 +35,12 @@ const notoTifinagh = Noto_Sans_Tifinagh({
   weight: ["400"],
   display: "swap",
   variable: "--font-tifinagh",
+});
+const atkinson = Atkinson_Hyperlegible({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-readable",
 });
 
 export function generateStaticParams() {
@@ -85,9 +93,15 @@ export default async function LocaleLayout(props: {
       lang={locale}
       dir={meta.dir}
       data-script={meta.script ?? "latin"}
-      className={`${fraunces.variable} ${hanken.variable} ${notoArabic.variable} ${notoTifinagh.variable} h-full`}
+      className={`${fraunces.variable} ${hanken.variable} ${notoArabic.variable} ${notoTifinagh.variable} ${atkinson.variable} h-full`}
     >
       <body className="flex min-h-full flex-col">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('reage:a11y:readable-font'))document.documentElement.dataset.readableFont='true'}catch(e){}",
+          }}
+        />
         <NextIntlClientProvider>
           <a
             href="#main"
@@ -100,6 +114,7 @@ export default async function LocaleLayout(props: {
             {props.children}
           </main>
           <SiteFooter />
+          <AccessibilityWidget />
         </NextIntlClientProvider>
       </body>
     </html>

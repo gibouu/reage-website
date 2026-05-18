@@ -244,5 +244,12 @@
     "formationTitle": "Training",
     "formationBody": "Online training and mentoring to build skills.",
     "cta": "Explore"
+  },
+  "A11y": {
+    "button": "Accessibility",
+    "title": "Accessibility",
+    "readableFont": "More readable font",
+    "readableFontHint": "Switch to a high-legibility typeface.",
+    "close": "Close"
   }
 }
