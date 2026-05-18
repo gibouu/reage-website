@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { PageShell } from "@/components/page-shell";
-import { partners } from "@/lib/site";
 
 export default async function Page(props: {
   params: Promise<{ locale: string }>;
@@ -30,15 +29,6 @@ function Content() {
             </p>
           </section>
         ))}
-      </div>
-      <div className="mt-16 border-t border-line pt-10">
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-          {partners.map((p) => (
-            <span key={p} className="text-sm text-ink-faint">
-              {p}
-            </span>
-          ))}
-        </div>
       </div>
     </PageShell>
   );

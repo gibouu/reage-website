@@ -24,36 +24,25 @@ export function SiteFooter() {
           <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
             {t("Footer.contactTitle")}
           </h2>
-          <ul className="mt-4 space-y-3 text-sm">
-            <li>
-              <a
-                href={`mailto:${site.email}`}
-                className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
-              >
-                <Mail className="size-4" aria-hidden />
-                {site.email}
-              </a>
-            </li>
-            <li>
-              <a
-                href={site.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
-              >
-                <LinkedInIcon className="size-4" />
-                {t("Footer.linkedin")}
-              </a>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="text-ink-soft transition-colors hover:text-teal"
-              >
-                {t("Nav.contact")}
-              </Link>
-            </li>
-          </ul>
+          <div className="mt-4 flex flex-row items-center justify-between gap-4 text-sm md:flex-col md:items-end md:gap-3">
+            <a
+              href={`mailto:${site.email}`}
+              className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
+            >
+              <Mail className="size-4" aria-hidden />
+              {site.email}
+            </a>
+            <a
+              href={site.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("Footer.linkedin")}
+              className="inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-teal"
+            >
+              <LinkedInIcon className="size-4" />
+              {t("Footer.linkedin")}
+            </a>
+          </div>
         </div>
       </div>
 
