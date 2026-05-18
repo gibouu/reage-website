@@ -24,7 +24,7 @@ export function SiteFooter() {
           <h2 className="text-xs font-semibold uppercase tracking-wider text-ink-faint">
             {t("Footer.contactTitle")}
           </h2>
-          <div className="mt-4 flex flex-row items-center justify-between gap-4 text-sm md:flex-col md:items-end md:gap-3">
+          <div className="mt-4 flex flex-row items-center gap-6 text-sm md:justify-end">
             <a
               href={site.linkedinUrl}
               target="_blank"
