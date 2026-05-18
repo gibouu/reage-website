@@ -255,14 +255,14 @@ function LatestEvents({
         {events.length === 0 ? (
           <EmptyState Icon={CalendarClock} label={t("empty")} />
         ) : (
-          <div className="mt-10 -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-4 [scrollbar-width:thin]">
+          <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-[calc(50%-9rem)] pb-4 [scrollbar-width:thin] sm:px-0">
             {events.map((e) => {
               const Icon = EVENT_ICON[eventKind(e.slug)];
               const c = pickT(e.translations, locale);
               return (
                 <article
                   key={e.id}
-                  className="flex w-72 shrink-0 snap-start flex-col rounded-[var(--radius-card)] border border-line bg-paper p-6"
+                  className="flex w-72 shrink-0 snap-center flex-col rounded-[var(--radius-card)] border border-line bg-paper p-6 sm:snap-start"
                 >
                   <span className="grid size-11 place-items-center rounded-2xl bg-teal-tint text-teal">
                     <Icon className="size-5" aria-hidden />
